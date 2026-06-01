@@ -26,7 +26,10 @@ const projectsData = [
                 <p style="margin-top: 10px;"><b>Sản phẩm cuối cùng:</b> Hệ thống thư mục logic giúp nhóm 5 thành viên truy cập và đồng bộ tài nguyên tức thì trong 1 tuần cao điểm của dự án.</p>
                 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: CẤU TRÚC THƯ MỤC DỰ ÁN]</h4>
-                <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 10px;">(Ảnh chụp màn hình cấu trúc thư mục Google Drive được đính kèm trong tài liệu)</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 15px;">
+                    <img src="files/images/week1_anh1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                    <img src="files/images/week1_anh2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                </div>
                 <div class="prompt-box">📂 Drive của tôi > [2026]_AI_Impact_Marketing
 ├── 📂 01_Quản_trị_Dự_án
 ├── 📂 02_Nghiên_cứu_Nội_dung
@@ -154,7 +157,11 @@ Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java c
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
                 <p><b>Quá trình:</b> Với vai trò Trưởng nhóm Kỹ thuật, tôi đã số hóa toàn bộ quy trình phân công công việc bằng sơ đồ Trello, tích hợp Automation để thông báo tự động khi một task chuyển trạng thái. Ứng dụng Google Calendar tích hợp Discord để nhắc nhở deadline tự động (Mention).</p>
                 <p style="margin-top: 10px;"><b>Kết quả:</b> Nhóm hoàn thành toàn bộ kịch bản, quay dựng video dài 7 phút trước deadline 12 giờ. Bản thân tôi đã thực hiện hơn 15 lượt comment sửa bài trên Google Docs và soạn một bộ Prompt Library dùng chung cho đồng đội.</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[HÌNH ẢNH MINH HỌA: BẢNG PHÂN CÔNG VÀ TIẾN ĐỘ TRÊN TRELLO/EXCEL] (Đính kèm trong tài liệu)</p>
+                <p style="margin-top: 10px; font-weight: 600; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: BẢNG PHÂN CÔNG VÀ TIẾN ĐỘ TRÊN TRELLO/EXCEL]</p>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
+                    <img src="files/images/week4_image1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                    <img src="files/images/week4_image2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                </div>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
@@ -188,7 +195,11 @@ Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java c
                 <p><b>Bước 1 (Nội dung):</b> Sử dụng prompt đóng vai chuyên gia giáo dục trên Gemini để lên dàn ý 5 phần về phương pháp Spaced Repetition. Tôi tự tinh chỉnh bằng cách chèn thêm ví dụ thực tế về việc "Học các hàm trong Java".<br>
                 <b>Bước 2 (Hình ảnh):</b> Dùng DALL-E 3 tạo ra artwork mô tả "não bộ kết nối bằng mạch điện xanh" tượng trưng cho AI và tốc độ học tập.<br>
                 <b>Bước 3 (Thiết kế):</b> Đẩy dữ liệu vào Canva Magic Design, chọn bộ font không chân (Sans-serif) hiện đại để tối ưu hóa trải nghiệm đọc trên thiết bị số.</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[SẢN PHẨM HOÀN THIỆN: ẢNH VÀ INFOGRAPHIC] (Chèn bức ảnh bộ não mạch điện và file thiết kế Infographic trong tài liệu đính kèm)</p>
+                <p style="margin-top: 15px; font-weight: 600; color: var(--text-primary);">[SẢN PHẨM HOÀN THIỆN: ẢNH VÀ INFOGRAPHIC]</p>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
+                    <img src="files/images/week5_image1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                    <img src="files/images/week5_image2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
+                </div>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
