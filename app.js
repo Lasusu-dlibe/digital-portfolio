@@ -321,30 +321,30 @@ const views = {
                 <div class="summary-card">
                     <i data-lucide="heart"></i>
                     <h3>⏳ Trải nghiệm và cảm nhận cá nhân</h3>
-                    <p>Hành trình xây dựng Digital Portfolio này không đơn thuần là việc hoàn thành một bài tập cuối kỳ, mà là một cơ hội để mình nghiêm túc nhìn lại sự thay đổi của bản thân. Từ một sinh viên công nghệ còn nhiều bỡ ngỡ với các công cụ trực tuyến, việc tự tay thiết kế và hệ thống hóa toàn bộ sản phẩm trên một nền tảng web giúp mình có được cái nhìn tổng quan và thực tế hơn về ngành học.</p>
+                    <p>Hành trình xây dựng Digital Portfolio cho môn học này mang lại cho tôi một trải nghiệm học thuật thực sự bùng nổ. Đối với một sinh viên ngành Công nghệ thông tin tại UET, việc không chỉ học lý thuyết mà được trực tiếp ứng dụng các hệ sinh thái công cụ số (Trello, Drive, Gemini, Canva AI...) để hoàn thiện một sản phẩm website cá nhân hoàn chỉnh giúp tôi nhìn rõ bức tranh toàn cảnh về năng lực số cần có trong thời đại mới.</p>
                 </div>
                 
                 <div class="summary-card">
                     <i data-lucide="book-open"></i>
                     <h3>🧠 Kiến thức & Kỹ năng quan trọng nhất</h3>
                     <ul>
-                        <li><b>Tư duy kỹ thuật hệ thống (Systematic Thinking):</b> Học được cách tổ chức thông tin sao cho logic, scannable và tối ưu hóa trải nghiệm người dùng (UX) ngay trên chính trang portfolio này.</li>
-                        <li><b>Kỹ nghệ ra lệnh (Prompt Engineering):</b> Đây là kỹ năng tối quan trọng của tương lai. Mình hiểu rằng năng lực giao tiếp hiệu quả với AI chính là đòn bẩy định hình năng suất lao động của một lập trình viên hiện đại.</li>
-                        <li><b>Tư duy phản biện trước công nghệ:</b> Nhận thức rõ ràng ranh giới giữa việc ứng dụng AI để tăng hiệu suất và việc lạm dụng AI dẫn đến lười tư duy.</li>
+                        <li><b>Làm chủ kỹ nghệ Prompting chuyên sâu:</b> Học được cách giao tiếp với máy tính bằng tư duy logic, áp dụng nhuần nhuyễn các kỹ thuật nâng cao (Role, Chain-of-Thought) để bắt AI phải trả về kết quả tối ưu nhất cho học tập.</li>
+                        <li><b>Năng lực điều phối và quản trị số:</b> Tư duy quản trị công việc bằng mô hình Kanban trên Trello và chia luồng thông tin trên Discord giúp tôi nâng cao kỹ năng lãnh đạo kỹ thuật (Technical Leadership) khi làm việc nhóm.</li>
+                        <li><b>Tư duy phản biện trước công nghệ:</b> Nhìn nhận AI bằng lăng kính khách quan, biết bóc tách điểm mạnh/điểm yếu của từng công cụ thay vì thần thánh hóa nó.</li>
                     </ul>
                 </div>
 
                 <div class="summary-card">
                     <i data-lucide="star"></i>
                     <h3>🎯 Điểm tâm đắc nhất</h3>
-                    <p>Mình vô cùng tâm đắc với phần xây dựng Bộ nguyên tắc sử dụng AI có trách nhiệm. Nó như một chiếc "kim chỉ nam" giúp mình định hình phong cách làm việc chuyên nghiệp, liêm chính — điều mà mọi doanh nghiệp công nghệ lớn đều tìm kiếm ở các kỹ sư tương lai.</p>
+                    <p>Điều tôi tâm đắc nhất chính là việc xây dựng thành công Bộ nguyên tắc sử dụng AI có trách nhiệm. Trong kỷ nguyên số, một kỹ sư CNTT xuất sắc của UET không chỉ được định nghĩa bằng việc viết code nhanh ra sao, mà quan trọng hơn cả là ý thức về liêm chính học thuật và đạo đức nghề nghiệp.</p>
                 </div>
 
                 <div class="summary-card">
                     <i data-lucide="rocket"></i>
                     <h3>🚀 Thách thức và bài học tương lai</h3>
-                    <p><b>Thách thức lớn nhất:</b> Việc duy trì tính nhất quán trong thiết kế giao diện (UI) và việc phân tích sâu sắc bản chất của từng bài tập thay vì chỉ liệt kê kết quả một cách hời hợt.</p>
-                    <p style="margin-top: 10px;"><b>Bài học cho tương lai:</b> Công nghệ số và AI thay đổi theo từng ngày. Kỹ năng quan trọng nhất không phải là thành thạo một công cụ cố định, mà là năng lực tự học (Meta-learning) và khả năng thích ứng linh hoạt trước mọi sự thay đổi của thế giới công nghệ.</p>
+                    <p><b>Thách thức lớn nhất:</b> Vượt qua sự "ỷ lại" vào tốc độ giải quyết vấn đề của AI để ép bản thân phải tự suy nghĩ bản chất toán học/thuật toán trước khi tham khảo máy tính.</p>
+                    <p style="margin-top: 10px;"><b>Bài học cho tương lai:</b> Công nghệ số thay đổi theo từng giờ (giống như bối cảnh năm 2026 hiện tại). Kỹ năng sống còn không phải là thành thạo một phần mềm cố định, mà là năng lực tự học nhanh (Agility) và tư duy thích ứng linh hoạt trước mọi làn sóng công nghệ mới. Portfolio này chính là bước đệm vững chắc đầu tiên của tôi trên con đường trở thành một kỹ sư CNTT toàn diện.</p>
                 </div>
             </div>
         </div>
