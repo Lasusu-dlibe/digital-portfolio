@@ -5,222 +5,224 @@ const projectsData = [
     {
         id: "01",
         title: "BÀI 1: THAO TÁC CƠ BẢN VỚI TỆP TIN VÀ THƯ MỤC",
-        shortDesc: "Thiết lập hệ thống quản lý dữ liệu học tập khoa học, áp dụng quy tắc đặt tên chuẩn mực.",
+        shortDesc: "Thiết lập cấu trúc thư mục tối ưu và quy tắc đặt tên tệp khoa học để quản trị tài nguyên số của dự án nhóm.",
         icon: "folder",
         file: "week1.zip",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Thiết lập một hệ thống quản lý dữ liệu học tập khoa học, áp dụng quy tắc đặt tên chuẩn mực để tối ưu hóa thời gian tìm kiếm và tránh thất lạc tài liệu trong suốt 4 năm đại học.</p>
+                <p>Thiết lập cấu trúc thư mục tối ưu và quy tắc đặt tên tệp (Naming Convention) khoa học để quản trị tài nguyên số của dự án nhóm, loại bỏ hoàn toàn việc nhầm lẫn các phiên bản trong quá trình làm việc chung.</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
                 <ul style="padding-left: 20px; color: var(--text-secondary);">
                     <li>Hệ điều hành Windows 11 File Explorer.</li>
-                    <li>Công cụ vẽ sơ đồ Mindmeister (để phác thảo cấu trúc).</li>
+                    <li>Không gian lưu trữ đám mây Google Drive (Google Workspace).</li>
                 </ul>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p><b>Bước 1:</b> Đánh giá toàn bộ lượng tài liệu hiện có và phân loại theo học kỳ, môn học.<br>
-                <b>Bước 2:</b> Xây dựng cây thư mục logic theo nguyên tắc "Không quá 3 tầng click chuột".<br>
-                <b>Bước 3:</b> Áp dụng quy tắc đặt tên tệp nhất quán: <code>[MãMôn]_TênTàiLiệu_[PhiênBản]_[NgàyNộp]</code>.</p>
+                <p><b>Quá trình:</b> Với vai trò Trưởng nhóm Kỹ thuật, tôi đã phân chia dữ liệu dự án thành cấu trúc 3 cấp rõ ràng. Đồng thời áp dụng quy chuẩn đặt tên tệp nghiêm ngặt theo định dạng: <code>YYYYMMDD_FileName_Version</code>.</p>
+                <p style="margin-top: 10px;"><b>Sản phẩm cuối cùng:</b> Hệ thống thư mục logic giúp nhóm 5 thành viên truy cập và đồng bộ tài nguyên tức thì trong 1 tuần cao điểm của dự án.</p>
                 
-                <h4 style="margin-top: 15px; color: var(--text-primary);">SƠ ĐỒ CÂY THƯ MỤC</h4>
-                <div class="prompt-box">📂 UET_Learning_Data/
-├── 📂 K70_Học_Kỳ_1/
-│   ├── 📂 UET.A14_Nhập_môn_CN_Số/
-│   │   ├── 📂 01_Bài_tập_Cá_nhân/
-│   │   │   └── 📄 UET.A14_Digital_Portfolio_V1_20260516.pdf
-│   │   └── 📂 02_Bài_tập_Nhóm/
-│   └── 📂 INT1004_Nhập_môn_Lập_trình/
-└── 📂 K70_Học_Kỳ_2/</div>
+                <h4 style="margin-top: 15px; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: CẤU TRÚC THƯ MỤC DỰ ÁN]</h4>
+                <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 10px;">(Ảnh chụp màn hình cấu trúc thư mục Google Drive được đính kèm trong tài liệu)</p>
+                <div class="prompt-box">📂 Drive của tôi > [2026]_AI_Impact_Marketing
+├── 📂 01_Quản_trị_Dự_án
+├── 📂 02_Nghiên_cứu_Nội_dung
+├── 📂 03_Tư_liệu_Video
+├── 📂 04_Sản_phẩm_Cuối</div>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Thói quen lưu tệp bừa bãi ra màn hình Desktop cũ khiến việc phân loại ban đầu mất nhiều thời gian.<br><br>
-                <b>Bài học:</b> Việc tổ chức dữ liệu khoa học ngay từ đầu giúp giải phóng không gian tinh thần (mental space), tăng tốc hiệu suất làm việc khi cần truy xuất tài liệu gấp.</p>
+                <p><b>Khó khăn:</b> Ban đầu các thành viên quen lưu tệp bừa bãi và đặt tên tùy ý (ví dụ: video_final.mp4, script_moi.docx), gây xung đột phiên bản.<br><br>
+                <b>Bài học:</b> Tổ chức dữ liệu khoa học và thống nhất quy chuẩn đặt tên ngay từ ngày đầu tiên là nền móng cốt lõi quyết định 50% sự thành công khi làm việc nhóm trong môi trường số.</p>
             </div>
         `
     },
     {
         id: "02",
         title: "BÀI 2: TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT",
-        shortDesc: "Khai thác tài liệu nghiên cứu chất lượng cao về chủ đề Tác động của AI đối với sinh viên ngành IT.",
+        shortDesc: "Tìm kiếm, sàng lọc và đánh giá các tài liệu khoa học uy tín, có tính thời đại (giai đoạn 2023-2024).",
         icon: "search",
         file: "week2.docx",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Khai thác tài liệu nghiên cứu chất lượng cao về chủ đề "Tác động của AI đối với sinh viên ngành IT", loại bỏ các nguồn tin rác hoặc thiếu kiểm chứng.</p>
+                <p>Tìm kiếm, sàng lọc và đánh giá các tài liệu khoa học uy tín, có tính thời đại (giai đoạn 2023-2024) để phục vụ bài báo cáo phân tích về chủ đề: "Tác động của AI tạo sinh đến kỹ năng tự học và tư duy phản biện của sinh viên".</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
                 <ul style="padding-left: 20px; color: var(--text-secondary);">
-                    <li>Google Scholar, ResearchGate.</li>
-                    <li>Các toán tử nâng cao (<code>site:</code>, <code>filetype:</code>, <code>""</code>, <code>AND</code>).</li>
+                    <li>Google Scholar, ResearchGate, các toán tử tìm kiếm nâng cao (AND, site:, filetype:).</li>
+                    <li>Mô hình ngôn ngữ lớn Google Gemini (đóng vai trò trợ lý nghiên cứu học thuật).</li>
                 </ul>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p><b>Chiến lược tìm kiếm:</b> Sử dụng cú pháp nâng cao để thu hẹp phạm vi:<br>
-                <code>"Artificial Intelligence" AND "computer science students" site:.edu filetype:pdf</code></p>
-                <p style="margin-top: 10px;"><b>Kết quả:</b> Hệ thống lọc được 5 bài báo khoa học chuẩn Q1/Q2 thay vì hàng ngàn bài blog không rõ nguồn gốc trên Google thường ngày.</p>
+                <p><b>Quá trình:</b> Sử dụng toán tử để quét và chọn ra 3 tài liệu uy tín từ UNESCO, IEEE và các tạp chí giáo dục quốc tế lớn. Nạp file gốc vào AI để thực hiện trích xuất mục tiêu, phương pháp và kết quả chính.</p>
                 
-                <h4 style="margin-top: 15px; color: var(--text-primary);">Bảng đánh giá nguồn tin (CRAAP Test)</h4>
+                <p style="margin-top: 15px; font-weight: 600;">Danh mục tài liệu thu thập được:</p>
+                <ul style="padding-left: 20px; color: var(--text-secondary);">
+                    <li>Cotton et al. (2023): ChatGPT in Higher Education: Considerations for Academic Integrity and Student Learning.</li>
+                    <li>Kasneci et al. (2023): The Role of AI in Personalized Learning: A Review of ChatGPT’s Potential.</li>
+                    <li>UNESCO (2023): Guidance for generative AI in education and research.</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; color: var(--text-primary);">Bảng đối soát so sánh góc nhìn học thuật (Cross-Reference Matrix)</h4>
                 <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text-secondary); text-align: left;">
-                    <tr style="border-bottom: 1px solid var(--border-color);"><th style="padding: 8px;">Tiêu chí</th><th style="padding: 8px;">Chi tiết đánh giá bài báo của IEEE</th><th style="padding: 8px;">Kết luận</th></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;"><b>Currency</b> (Tính cập nhật)</td><td style="padding: 8px;">Xuất bản năm 2025, hoàn toàn phù hợp với bối cảnh công nghệ hiện tại.</td><td style="padding: 8px; color: #10b981;">Đạt</td></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;"><b>Relevance</b> (Tính liên quan)</td><td style="padding: 8px;">Tập trung chính xác vào kỹ năng lập trình của sinh viên CNTT.</td><td style="padding: 8px; color: #10b981;">Đạt</td></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;"><b>Authority</b> (Nguồn uy tín)</td><td style="padding: 8px;">Được phát hành bởi tổ chức uy tín IEEE Computer Society.</td><td style="padding: 8px; color: #10b981;">Đạt</td></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;"><b>Accuracy</b> (Tính chính xác)</td><td style="padding: 8px;">Có số liệu thực nghiệm, phương pháp nghiên cứu rõ ràng.</td><td style="padding: 8px; color: #10b981;">Đạt</td></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;"><b>Purpose</b> (Mục đích)</td><td style="padding: 8px;">Nghiên cứu học thuật phi lợi nhuận.</td><td style="padding: 8px; color: #10b981;">Đạt</td></tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);"><th style="padding: 8px;">Tiêu chí đối soát</th><th style="padding: 8px;">Cotton et al. (2023)</th><th style="padding: 8px;">Kasneci et al. (2023)</th><th style="padding: 8px;">UNESCO (2023)</th></tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px; font-weight: bold;">Trọng tâm chính</td><td style="padding: 8px;">Nguy cơ về Liêm chính học thuật trong giáo dục đại học.</td><td style="padding: 8px;">Mô hình học tập thích ứng và cá nhân hóa lộ trình.</td><td style="padding: 8px;">Khung quản trị toàn cầu, đạo đức và chính sách cấp chính phủ.</td></tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px; font-weight: bold;">Thái độ với AI</td><td style="padding: 8px;">Lạc quan có kiểm soát (Xem AI là công cụ hỗ trợ).</td><td style="padding: 8px;">Phản biện chuyên sâu (Sợ sinh viên lười tư duy).</td><td style="padding: 8px;">Thận trọng & Minh bạch (Yêu cầu quy chuẩn đạo đức khắt khe).</td></tr>
                 </table>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Ban đầu khi chưa dùng toán tử, kết quả trả về quá rộng và hầu hết là các bài báo mạng giật gân, thiếu tính học thuật.<br><br>
-                <b>Bài học:</b> Kỹ năng đặt câu hỏi và lọc thông tin (Information Literacy) quan trọng hơn việc chỉ đọc số lượng lớn. Muốn đi sâu vào ngành IT, phải biết cách tìm tài liệu gốc từ các nguồn uy tín.</p>
+                <p><b>Khó khăn:</b> Các tài liệu học thuật quốc tế có dung lượng dài, nặng tính lý thuyết quản lý phương Tây và chưa tính đến các rào cản hạ tầng công nghệ tại nước đang phát triển như Việt Nam. AI đôi khi có hiện tượng "hallucinate" (bịa đặt) số liệu nhỏ nếu không kiểm soát chặt.<br><br>
+                <b>Bài học:</b> AI rất mạnh trong việc đọc hiểu văn bản và trích xuất ý chính, nhưng con người phải đóng vai trò là "Người phản biện" để phát hiện lỗ hổng bối cảnh và xác thực chéo dữ liệu.</p>
             </div>
         `
     },
     {
         id: "03",
         title: "BÀI 3: VIẾT PROMPT HIỆU QUẢ CHO TÁC VỤ HỌC TẬP (PROMPT ENGINEERING)",
-        shortDesc: "Ứng dụng các kỹ thuật Prompt Engineering nâng cao để biến AI thành một gia sư.",
+        shortDesc: "Nghiên cứu và tối ưu hóa các phiên bản câu lệnh (Prompt Engineering).",
         icon: "message-square",
         file: "week3.docx",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Ứng dụng các kỹ thuật Prompt Engineering nâng cao để biến AI thành một gia sư hỗ trợ giải thích các thuật toán cấu trúc dữ liệu phức tạp.</p>
+                <p>Nghiên cứu và tối ưu hóa các phiên bản câu lệnh (Prompt Engineering) để biến AI từ một công cụ tra cứu thông thường thành một "chuyên gia lập trình" giải thích các khái niệm OOP phức tạp.</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
-                <p style="color: var(--text-secondary);">Gemini 1.5 Pro / ChatGPT-4o.</p>
+                <p style="color: var(--text-secondary);">Mô hình AI: Google Gemini (Phiên bản Advanced).</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p><b>❌ Prompt ban đầu (Sơ sài):</b> "Giải thích cho tao thuật toán QuickSort trong Java."<br>
-                <i>Kết quả từ AI:</i> Trả về một đoạn code Java mẫu chuẩn và định nghĩa lý thuyết khô khan lấy từ sách giáo khoa, rất khó để một sinh viên năm nhất hiểu sâu về bản chất vận hành của con trỏ trái/phải.</p>
-                <p style="margin-top: 15px;"><b>✅ Prompt cải tiến (Áp dụng khung cấu trúc: Vai trò - Bối cảnh - Nhiệm vụ - Định dạng):</b></p>
-                <div class="prompt-box" style="font-style: italic;">Bạn là một Giảng viên Cấu trúc dữ liệu và Giải thuật xuất sắc tại UET. Tôi là sinh viên năm nhất đang gặp khó khăn trong việc hiểu cách hoạt động của thuật toán QuickSort.
-Hãy giải thích thuật toán này bằng phương pháp tư duy trực quan (Visual Thinking), sử dụng ví dụ thực tế về việc xếp một hàng học sinh theo chiều cao.
-Định dạng đầu ra gồm:
-1. Ý tưởng cốt lõi (không dùng thuật ngữ hàn lâm).
-2. Từng bước dịch chuyển của các phần tử dựa trên ví dụ hàng học sinh.
-3. Đoạn code Java sạch, có comment giải thích rõ ràng dòng code đóng vai trò gì.</div>
+                <p>Tôi đã thực hiện thử nghiệm tối ưu hóa câu lệnh qua 3 phiên bản tăng dần về độ khó kỹ thuật cho tác vụ: Giải thích Tính Đa hình (Polymorphism) trong Java.</p>
+                
+                <h4 style="margin-top: 15px; color: var(--text-primary);">1. Phiên bản Prompt Cơ bản</h4>
+                <div class="prompt-box">"Giải thích tính đa hình trong Java là gì."</div>
+                <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Cung cấp định nghĩa lý thuyết khô khan trích từ sách giáo khoa (Overloading, Overriding), code mẫu chung chung, rất khó tiếp thu đối với sinh viên mới học.</p>
+
+                <h4 style="margin-top: 15px; color: var(--text-primary);">2. Phiên bản Prompt Cải tiến (Định hình cấu trúc & Đối tượng)</h4>
+                <div class="prompt-box">"Giải thích tính đa hình trong lập trình Java cho sinh viên năm nhất. Hãy trình bày theo cấu trúc: Định nghĩa, Phân loại (Overloading & Overriding) và cho ví dụ code đơn giản."</div>
+                <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Cải thiện rõ rệt về mặt bố cục. AI đã biết hạ thấp độ khó của thuật ngữ để phù hợp với đối tượng "sinh viên năm nhất". Tuy nhiên, câu trả lời vẫn thiếu sự trực quan và mẹo thực tế.</p>
+
+                <h4 style="margin-top: 15px; color: var(--text-primary);">3. Phiên bản Prompt Nâng cao (Tích hợp kỹ thuật Role + CoT + Few-shot)</h4>
+                <div class="prompt-box" style="font-style: italic;">"Bạn là một kỹ sư phần mềm cao cấp tại Google. Hãy giải thích khái niệm 'Tính Đa hình' cho một sinh viên đang gặp khó khăn trong việc hiểu OOP. 
+Quy trình suy nghĩ: Hãy dùng hình ảnh 'Chiếc điều khiển từ xa' hoặc 'Âm thanh của các loài vật' làm ẩn dụ. Sau đó phân tích tại sao đa hình lại giúp code linh hoạt hơn. 
+Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java chuẩn Clean Code và kết luận bằng 1 câu ghi nhớ."</div>
+                <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Đạt mức Xuất sắc. AI sử dụng hình ảnh ẩn dụ "Chiếc điều khiển từ xa" cực kỳ trực quan. Code Java sinh ra đạt chuẩn Clean Code, có tính ứng dụng cao, giúp người học nắm bắt bản chất chỉ trong 1 lần đọc.</p>
             </div>
             <div class="detail-block">
-                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="bar-chart-2" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> So sánh kết quả & Phân tích cơ chế</h3>
-                <p><b>Sự khác biệt ở đầu ra:</b> Kết quả từ prompt cải tiến sinh động hơn hẳn. AI không chỉ đưa code mà đã nhân hóa các phần tử trong mảng thành "các bạn học sinh", giúp mình hình dung được cách phân đoạn (Partition) diễn ra như thế nào.</p>
-                <p style="margin-top: 10px;"><b>Tại sao Prompt cải tiến tốt hơn?</b></p>
+                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="bar-chart-2" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Phân tích vì sao Prompt nâng cao tốt hơn</h3>
                 <ul style="padding-left: 20px; color: var(--text-secondary);">
-                    <li><b>Thiết lập vai trò (Role):</b> Định hình văn phong và độ sâu kiến thức của AI (Giảng viên UET).</li>
-                    <li><b>Giới hạn bối cảnh (Context):</b> Giúp AI biết đối tượng tiếp nhận là sinh viên năm nhất để điều chỉnh thuật ngữ phù hợp.</li>
-                    <li><b>Ràng buộc định dạng (Format constraint):</b> Ép AI phải tư duy theo từng bước (Chain-of-Thought) và sử dụng phép ẩn dụ trực quan thay vì copy-paste tài liệu có sẵn.</li>
+                    <li><b>Kỹ thuật Đóng vai (Role-playing):</b> Ép AI truy cập vùng dữ liệu của một chuyên gia (Kỹ sư Google), giúp nâng tầm chiều sâu kiến thức và định hình tông giọng chuyên nghiệp.</li>
+                    <li><b>Chuỗi tư duy (Chain-of-Thought):</b> Ràng buộc AI suy nghĩ theo các bước (Ẩn dụ -> Phân tích bản chất -> Viết code), giúp câu trả lời logic, không bị sót ý.</li>
+                    <li><b>Giới hạn ngữ cảnh và Output:</b> Kiểm soát tuyệt đối định dạng đầu ra, tránh hiện tượng AI viết lan man lý thuyết dông dài.</li>
                 </ul>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Nếu không biết cách kiểm soát độ dài và đưa tiêu chí rõ ràng, AI rất dễ bị "lan man" hoặc tự động viết luôn toàn bộ code của các bài tập khác.<br><br>
-                <b>Bài học:</b> Chất lượng đầu ra của AI tỷ lệ thuận với năng lực tư duy logic và khả năng làm chủ ngôn ngữ của người ra lệnh (Prompt Engineer).</p>
+                <p><b>Khó khăn:</b> Viết prompt nâng cao đòi hỏi bản thân người viết phải có tư duy logic tốt và biết rõ mình muốn gì, nếu không AI sẽ sinh ra kết quả rập khuôn.<br><br>
+                <b>Bài học:</b> Chất lượng câu trả lời của AI tỷ lệ thuận với năng lực đặt câu hỏi và độ chi tiết của bối cảnh mà bạn cung cấp.</p>
             </div>
         `
     },
     {
         id: "04",
         title: "BÀI 4: SỬ DỤNG CÔNG CỤ HỢP TÁC TRỰC TUYẾN CHO DỰ ÁN NHÓM",
-        shortDesc: "Quản lý, phân công và theo dõi tiến độ dự án làm bài tập lớn môn học.",
+        shortDesc: "Thiết lập hạ tầng công nghệ số và điều phối tiến độ từ xa cho nhóm 5 người.",
         icon: "users",
         file: "week4.docx",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Quản lý, phân công và theo dõi tiến độ dự án làm bài tập lớn môn học, tối ưu hóa sự phối hợp từ xa giữa các thành viên trong nhóm.</p>
+                <p>Thiết lập hạ tầng công nghệ số và điều phối tiến độ từ xa cho nhóm 5 người, hoàn thành dự án làm video và báo cáo "AI đã tác động đến Marketing & Kinh doanh như thế nào" trong thời gian cao điểm 01 tuần.</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
                 <ul style="padding-left: 20px; color: var(--text-secondary);">
-                    <li>Trello (Quản lý dự án theo mô hình Kanban).</li>
-                    <li>Google Docs / Google Drive (Hợp tác biên tập nội dung theo thời gian thực).</li>
+                    <li>Trello: Quản trị tác vụ theo phương pháp Kanban (Backlog, In Progress, Review, Done).</li>
+                    <li>Discord: Trung tâm giao tiếp, chia kênh thảo luận chuyên biệt (#kịch-bản, #hậu-kỳ).</li>
+                    <li>Google Workspace (Docs, Sheets, Drive): Đồng bộ và biên tập tài nguyên thời gian thực.</li>
                 </ul>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p>Nhóm đã chia nhỏ dự án thành các thẻ công việc (Tasks) trên Trello với đầy đủ trạng thái: <b>To Do (Cần làm) -> In Progress (Đang làm) -> Review (Kiểm tra) -> Done (Hoàn thành)</b>.</p>
-                <p style="margin-top: 10px;">Mỗi thành viên được gán (Assign) trách nhiệm cụ thể và có Deadline rõ ràng, giúp loại bỏ tình trạng "trễ hạn" hoặc đùn đẩy trách nhiệm.</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[HÌNH ẢNH MINH HỌA: MÀN HÌNH BẢNG TRELLO CỦA NHÓM] (Đính kèm trong tài liệu)</p>
+                <p><b>Quá trình:</b> Với vai trò Trưởng nhóm Kỹ thuật, tôi đã số hóa toàn bộ quy trình phân công công việc bằng sơ đồ Trello, tích hợp Automation để thông báo tự động khi một task chuyển trạng thái. Ứng dụng Google Calendar tích hợp Discord để nhắc nhở deadline tự động (Mention).</p>
+                <p style="margin-top: 10px;"><b>Kết quả:</b> Nhóm hoàn thành toàn bộ kịch bản, quay dựng video dài 7 phút trước deadline 12 giờ. Bản thân tôi đã thực hiện hơn 15 lượt comment sửa bài trên Google Docs và soạn một bộ Prompt Library dùng chung cho đồng đội.</p>
+                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[HÌNH ẢNH MINH HỌA: BẢNG PHÂN CÔNG VÀ TIẾN ĐỘ TRÊN TRELLO/EXCEL] (Đính kèm trong tài liệu)</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Một số thành viên ban đầu quên cập nhật trạng thái thẻ trên Trello, dẫn đến việc quản lý tiến độ bị sai lệch.<br><br>
-                <b>Bài học:</b> Công cụ số chỉ phát huy tác dụng khi đi kèm với kỷ luật đội ngũ và một quy trình giao tiếp minh bạch.</p>
+                <p><b>Khó khăn:</b> Các thành viên học tại UET có lịch dày đặc, việc quay phim tại 5 địa điểm khác nhau dẫn đến chất lượng âm thanh, ánh sáng bị lệch.<br><br>
+                <b>Giải pháp số hóa:</b> Tôi đã hướng dẫn nhóm dùng công cụ AI Audio Enhancement để chuẩn hóa giọng nói và thiết lập một Master Template trên CapCut để đồng bộ hóa sản phẩm.<br><br>
+                <b>Bài học:</b> Công cụ số giúp tối ưu hóa 70% hiệu suất làm việc nhóm, nhưng sự minh bạch và tính kỷ luật của các thành viên mới là yếu tố quyết định.</p>
             </div>
         `
     },
     {
         id: "05",
         title: "BÀI 5: SỬ DỤNG AI TẠO SINH ĐỂ HỖ TRỢ SÁNG TẠO NỘI DUNG",
-        shortDesc: "Ứng dụng AI tạo sinh để thiết kế bộ nhận diện truyền thông.",
+        shortDesc: "Ứng dụng chuỗi liên hoàn các công cụ Generative AI để sản xuất dự án cẩm nang phương pháp học tập.",
         icon: "image",
         file: "week5.docx",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Ứng dụng AI tạo sinh để thiết kế bộ nhận diện truyền thông (gồm bài viết, hình ảnh minh họa) cho một chiến dịch nâng cao nhận thức về an toàn thông tin mạng trong môi trường học đường.</p>
+                <p>Ứng dụng chuỗi liên hoàn các công cụ Generative AI (Văn bản -> Hình ảnh -> Thiết kế) để sản xuất dự án: "Cẩm nang phương pháp học tập chủ động cho sinh viên công nghệ" (Sản phẩm gồm bài viết chuyên sâu và Infographic).</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
                 <ul style="padding-left: 20px; color: var(--text-secondary);">
-                    <li><b>Tạo văn bản:</b> Gemini (Lên outline và tinh chỉnh nội dung bài viết).</li>
-                    <li><b>Tạo hình ảnh:</b> Nano Banana 2 (Gemini 3 Flash Image) để gen ảnh minh họa 3D theo concept công nghệ hiện đại.</li>
+                    <li><b>Google Gemini:</b> Lên ý tưởng, lập dàn ý chi tiết bài viết.</li>
+                    <li><b>DALL-E 3 / Midjourney:</b> Tạo hình ảnh minh họa nghệ thuật kỹ thuật số (Digital Art).</li>
+                    <li><b>Canva AI (Magic Design):</b> Hỗ trợ dàn trang Infographic tự động.</li>
                 </ul>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p><b>Bước 1:</b> Dùng AI phân tích tâm lý sinh viên để chọn ra 3 chủ đề nóng nhất (Lừa đảo chuyển khoản, lộ thông tin cá nhân qua link lạ, mất tài khoản mạng xã hội).<br>
-                <b>Bước 2:</b> Viết bài viết phân tích kỹ thuật và giải pháp phòng tránh với văn phong gần gũi.<br>
-                <b>Bước 3:</b> Sử dụng AI tạo ảnh tạo ra các artwork mang phong cách Cyberpunk độc đáo để thu hút tương tác thị giác.</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[SẢN PHẨM TRƯNG BÀY: ẢNH VÀ ĐOẠN TRÍCH BÀI VIẾT TRUYỀN THÔNG] (Đính kèm trong tài liệu)</p>
+                <p><b>Bước 1 (Nội dung):</b> Sử dụng prompt đóng vai chuyên gia giáo dục trên Gemini để lên dàn ý 5 phần về phương pháp Spaced Repetition. Tôi tự tinh chỉnh bằng cách chèn thêm ví dụ thực tế về việc "Học các hàm trong Java".<br>
+                <b>Bước 2 (Hình ảnh):</b> Dùng DALL-E 3 tạo ra artwork mô tả "não bộ kết nối bằng mạch điện xanh" tượng trưng cho AI và tốc độ học tập.<br>
+                <b>Bước 3 (Thiết kế):</b> Đẩy dữ liệu vào Canva Magic Design, chọn bộ font không chân (Sans-serif) hiện đại để tối ưu hóa trải nghiệm đọc trên thiết bị số.</p>
+                <p style="margin-top: 10px; font-style: italic; color: var(--text-secondary);">[SẢN PHẨM HOÀN THIỆN: ẢNH VÀ INFOGRAPHIC] (Chèn bức ảnh bộ não mạch điện và file thiết kế Infographic trong tài liệu đính kèm)</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Hình ảnh do AI tạo ra đôi khi bị lỗi hiển thị ký tự chữ hoặc các chi tiết nhỏ như ngón tay bị biến dạng.<br><br>
-                <b>Bài học:</b> AI tạo sinh cực kỳ mạnh mẽ trong khâu khơi nguồn ý tưởng (Ideation), nhưng con người bắt buộc phải đóng vai trò là "Tổng biên tập" để rà soát, sửa lỗi và thổi "hồn" vào sản phẩm cuối cùng.</p>
+                <p><b>Khó khăn:</b> Đầu ra của AI tạo hình ảnh đôi khi màu sắc bị tối hoặc khó kiểm soát các chi tiết nhỏ. Thông tin văn bản của AI đôi khi mang tính lý thuyết thuần túy.<br><br>
+                <b>Bài học (Tư duy phối hợp):</b> Quy trình sáng tạo truyền thống mang tính tuyến tính (Viết -> Vẽ -> Thiết kế), nhưng với AI, quy trình trở thành song song, giúp rút ngắn thời gian từ 3 ngày xuống còn 4 tiếng. Trong đó, AI đóng vai trò "Trợ lý thực thi" (40% khối lượng), con người đóng vai trò "Biên tập viên thẩm mỹ" kiểm định (60%).</p>
             </div>
         `
     },
     {
         id: "06",
         title: "BÀI 6: SỬ DỤNG AI CÓ TRÁCH NHIỆM TRONG HỌC TẬP VÀ NGHIÊN CỨU",
-        shortDesc: "Xây dựng một bộ khung đạo đức cá nhân nhằm khai thác sức mạnh của AI.",
+        shortDesc: "Nghiên cứu quy chế liêm chính học thuật của UET và xây dựng bộ khung đạo đức cá nhân.",
         icon: "shield",
         file: "week6.pdf",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Xây dựng một bộ khung đạo đức cá nhân nhằm khai thác sức mạnh của AI mà không vi phạm các tiêu chuẩn về liêm chính học thuật của nhà trường.</p>
-            </div>
-            <div class="detail-block">
-                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="check-circle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Bộ nguyên tắc cá nhân khi sử dụng AI (6 Điều cốt lõi)</h3>
-                <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
-                    <li><b>Nguyên tắc "Cộng sự, không phải Thay thế":</b> Chỉ dùng AI để brainstorm, giải thích khái niệm hoặc sửa lỗi cú pháp code; tuyệt đối không để AI làm hộ 100% bài tập lớn.</li>
-                    <li><b>Nguyên tắc "Xác thực kép" (Fact-checking):</b> Mọi thông tin, số liệu, hoặc đoạn mã do AI cung cấp phải được đối chiếu lại với tài liệu chính thống hoặc chạy thử nghiệm thực tế để tránh hiện tượng AI "ảo tưởng" (Hallucination).</li>
-                    <li><b>Nguyên tắc "Minh bạch nguồn gốc":</b> Luôn khai báo rõ ràng trong báo cáo nếu có sử dụng sự trợ giúp của AI ở các khâu tối ưu hóa mã nguồn hoặc hiệu đính văn bản.</li>
-                    <li><b>Nguyên tắc "Bảo mật dữ liệu":</b> Không tải lên các công cụ AI công cộng những thông tin nội bộ của nhà trường, mã nguồn dự án chưa công bố hoặc dữ liệu cá nhân nhạy cảm.</li>
-                    <li><b>Nguyên tắc "Tôn trọng bản quyền":</b> Khi dùng AI để tạo sinh hình ảnh hoặc nội dung, phải kiểm tra kỹ nguồn dữ liệu huấn luyện và không sao chép nguyên bản phong cách của các nghệ sĩ đương đại khi chưa được phép.</li>
-                    <li><b>Nguyên tắc "Phát triển tư duy độc lập":</b> Luôn tự giải quyết bài toán bằng tư duy cá nhân trước khi tham khảo giải pháp của AI để tránh thui chột khả năng tư duy logic của một kỹ sư IT.</li>
-                </ul>
+                <p>Nghiên cứu quy chế liêm chính học thuật của Đại học Công nghệ (UET) và xây dựng bộ khung đạo đức cá nhân nhằm khai thác sức mạnh của AI một cách minh bạch, an toàn.</p>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="eye" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Phân tích các vấn đề đạo đức AI dưới góc nhìn sinh viên IT</h3>
-                <p><b>Đạo văn thế hệ mới (AI-generated Plagiarism):</b> Việc copy toàn bộ mã nguồn do AI viết rồi nộp bài mà không hiểu bản chất không chỉ là gian lận học thuật, mà còn tạo ra một thế hệ lập trình viên "rỗng kiến thức", mất khả năng gỡ lỗi (debug) khi hệ thống gặp sự cố lớn.</p>
-                <p style="margin-top: 10px;"><b>Sự thiên vị và định kiến (Bias):</b> Các mô hình AI được huấn luyện trên dữ liệu cũ có thể chứa các định kiến về giới tính hoặc sắc tộc trong ngành công nghệ. Nếu sinh viên IT tiếp nhận thông tin thiếu chọn lọc, chúng ta sẽ vô tình duy trì những định kiến đó vào các sản phẩm phần mềm tương lai.</p>
+                <p><b>Ranh giới giữa hỗ trợ và gian lận:</b> AI là một "tutor" tuyệt vời khi nó giải thích lỗi code hoặc gợi ý ý tưởng; nhưng nó trở thành công cụ gian lận khi sinh viên copy-paste nguyên văn mã nguồn hoặc bài luận để nộp mà không hiểu logic bên dưới.</p>
+                <p style="margin-top: 10px;"><b>Đạo văn ý tưởng (Idea Plagiarism):</b> AI tạo ra nội dung dựa trên bộ dữ liệu huấn luyện khổng lồ của nhiều tác giả. Việc nhận hoàn toàn ý tưởng của AI là của mình mà không khai báo là hành vi vi phạm liêm chính.</p>
+                <p style="margin-top: 10px;"><b>Hệ lụy thui chột kỹ năng:</b> Quá lạm dụng AI sẽ khiến sinh viên IT mất khả năng viết code căn bản, gặp khủng hoảng khi phải phỏng vấn lập trình trực tiếp (Coding Live) với nhà tuyển dụng.</p>
             </div>
             <div class="detail-block">
-                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="lightbulb" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Đề xuất cách sử dụng AI đúng đắn trong học tập</h3>
-                <p><b>Biến AI thành "Rubber Ducking" nâng cao:</b> Thay vì hỏi AI <i>"Hãy viết code bài này"</i>, hãy hỏi <i>"Đoạn code này của tôi đang bị lỗi logic ở đâu, hãy gợi ý hướng tối ưu"</i>. Điều này giúp sinh viên giữ vững vai trò chủ thể trong quá trình học.</p>
+                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="check-circle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Bộ nguyên tắc cá nhân khi sử dụng AI của Lã Quốc Sử (5 Tiêu chuẩn vàng)</h3>
+                <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                    <li><b>Nguyên tắc 70/30:</b> Chỉ sử dụng AI tối đa cho 30% khối lượng công việc (gợi ý khung, sửa ngữ pháp, brainstorm), 70% còn lại bắt buộc phải là thực thi, viết mã và kiểm chứng bằng tư duy độc lập của cá nhân.</li>
+                    <li><b>Kiểm chứng kép (Double-check):</b> Tuyệt đối không tin tưởng hoàn toàn vào dữ liệu của AI. Phải luôn chạy thử code trên IDE thực tế và đối chiếu kiến thức với tài liệu giáo trình chính thống để loại bỏ lỗi module hoặc thông tin sai lệch.</li>
+                    <li><b>Minh bạch tuyệt đối (Transparent Citation):</b> Luôn khai báo rõ ràng trong mọi bài tập/dự án nộp về trường. Định dạng trích dẫn chuẩn mực: "Nội dung được hỗ trợ bởi [Tên AI] vào ngày [Ngày/Tháng/Năm] ở khâu lập dàn ý...".</li>
+                    <li><b>Hỏi để hiểu, không hỏi để chép:</b> Đổi chiến lược viết prompt. Thay vì ra lệnh "Hãy làm hộ tôi bài này", tập trung vào các câu hỏi hỏi về bản chất cơ chế: "Tại sao đoạn code này chạy lỗi?", "Thuật toán này vận hành thế nào?".</li>
+                    <li><b>Bảo mật dữ liệu hệ thống:</b> Tuyệt đối không tải các mã nguồn cốt lõi của dự án phần mềm chưa công bố, hoặc các thông tin dữ liệu cá nhân nhạy cảm lên các mô hình AI công cộng để tránh rò rỉ dữ liệu.</li>
+                </ul>
             </div>
         `
     }
