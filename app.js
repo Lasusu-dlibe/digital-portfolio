@@ -393,7 +393,6 @@ const titles = {
     home: "Sử Portfolio - Digital Journey",
     projects: "Danh sách Dự án & Bài tập",
     summary: "Tổng kết Hành trình",
-    skills: "Kỹ năng chuyên môn",
     contact: "Thông tin liên hệ"
 };
 
