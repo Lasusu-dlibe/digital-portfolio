@@ -26,10 +26,14 @@ const projectsData = [
                 <p style="margin-top: 10px;"><b>Sản phẩm cuối cùng:</b> Hệ thống thư mục logic giúp nhóm 5 thành viên truy cập và đồng bộ tài nguyên tức thì trong 1 tuần cao điểm của dự án.</p>
                 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: CẤU TRÚC THƯ MỤC DỰ ÁN]</h4>
-                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 15px;">
-                    <img src="files/images/week1_anh1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                    <img src="files/images/week1_anh2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                </div>
+                <figure>
+                    <img src="files/images/week1_anh1.png" onerror="this.style.display='none'">
+                    <figcaption>Cấu trúc thư mục được quy chuẩn</figcaption>
+                </figure>
+                <figure>
+                    <img src="files/images/week1_anh2.png" onerror="this.style.display='none'">
+                    <figcaption>Chi tiết thư mục dự án</figcaption>
+                </figure>
                 <div class="prompt-box">📂 Drive của tôi > [2026]_AI_Impact_Marketing
 ├── 📂 01_Quản_trị_Dự_án
 ├── 📂 02_Nghiên_cứu_Nội_dung
@@ -73,11 +77,13 @@ const projectsData = [
                 </ul>
 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">Bảng đối soát so sánh góc nhìn học thuật (Cross-Reference Matrix)</h4>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text-secondary); text-align: left;">
-                    <tr style="border-bottom: 1px solid var(--border-color);"><th style="padding: 8px;">Tiêu chí đối soát</th><th style="padding: 8px;">Cotton et al. (2023)</th><th style="padding: 8px;">Kasneci et al. (2023)</th><th style="padding: 8px;">UNESCO (2023)</th></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px; font-weight: bold;">Trọng tâm chính</td><td style="padding: 8px;">Nguy cơ về Liêm chính học thuật trong giáo dục đại học.</td><td style="padding: 8px;">Mô hình học tập thích ứng và cá nhân hóa lộ trình.</td><td style="padding: 8px;">Khung quản trị toàn cầu, đạo đức và chính sách cấp chính phủ.</td></tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px; font-weight: bold;">Thái độ với AI</td><td style="padding: 8px;">Lạc quan có kiểm soát (Xem AI là công cụ hỗ trợ).</td><td style="padding: 8px;">Phản biện chuyên sâu (Sợ sinh viên lười tư duy).</td><td style="padding: 8px;">Thận trọng & Minh bạch (Yêu cầu quy chuẩn đạo đức khắt khe).</td></tr>
-                </table>
+                <div class="responsive-table-wrapper">
+                    <table>
+                        <tr><th>Tiêu chí đối soát</th><th>Cotton et al. (2023)</th><th>Kasneci et al. (2023)</th><th>UNESCO (2023)</th></tr>
+                        <tr><td>Trọng tâm chính</td><td>Nguy cơ về Liêm chính học thuật trong giáo dục đại học.</td><td>Mô hình học tập thích ứng và cá nhân hóa lộ trình.</td><td>Khung quản trị toàn cầu, đạo đức và chính sách cấp chính phủ.</td></tr>
+                        <tr><td>Thái độ với AI</td><td>Lạc quan có kiểm soát (Xem AI là công cụ hỗ trợ).</td><td>Phản biện chuyên sâu (Sợ sinh viên lười tư duy).</td><td>Thận trọng & Minh bạch (Yêu cầu quy chuẩn đạo đức khắt khe).</td></tr>
+                    </table>
+                </div>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
@@ -106,17 +112,19 @@ const projectsData = [
                 <p>Tôi đã thực hiện thử nghiệm tối ưu hóa câu lệnh qua 3 phiên bản tăng dần về độ khó kỹ thuật cho tác vụ: Giải thích Tính Đa hình (Polymorphism) trong Java.</p>
                 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">1. Phiên bản Prompt Cơ bản</h4>
-                <div class="prompt-box">"Giải thích tính đa hình trong Java là gì."</div>
+                <pre><code class="prompt-box">"Giải thích tính đa hình trong Java là gì."</code></pre>
                 <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Cung cấp định nghĩa lý thuyết khô khan trích từ sách giáo khoa (Overloading, Overriding), code mẫu chung chung, rất khó tiếp thu đối với sinh viên mới học.</p>
 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">2. Phiên bản Prompt Cải tiến (Định hình cấu trúc & Đối tượng)</h4>
-                <div class="prompt-box">"Giải thích tính đa hình trong lập trình Java cho sinh viên năm nhất. Hãy trình bày theo cấu trúc: Định nghĩa, Phân loại (Overloading & Overriding) và cho ví dụ code đơn giản."</div>
+                <pre><code class="prompt-box">"Giải thích tính đa hình trong lập trình Java cho sinh viên năm nhất. Hãy trình bày theo cấu trúc: Định nghĩa, Phân loại (Overloading & Overriding) và cho ví dụ code đơn giản."</code></pre>
                 <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Cải thiện rõ rệt về mặt bố cục. AI đã biết hạ thấp độ khó của thuật ngữ để phù hợp với đối tượng "sinh viên năm nhất". Tuy nhiên, câu trả lời vẫn thiếu sự trực quan và mẹo thực tế.</p>
 
                 <h4 style="margin-top: 15px; color: var(--text-primary);">3. Phiên bản Prompt Nâng cao (Tích hợp kỹ thuật Role + CoT + Few-shot)</h4>
-                <div class="prompt-box" style="font-style: italic;">"Bạn là một kỹ sư phần mềm cao cấp tại Google. Hãy giải thích khái niệm 'Tính Đa hình' cho một sinh viên đang gặp khó khăn trong việc hiểu OOP. 
-Quy trình suy nghĩ: Hãy dùng hình ảnh 'Chiếc điều khiển từ xa' hoặc 'Âm thanh của các loài vật' làm ẩn dụ. Sau đó phân tích tại sao đa hình lại giúp code linh hoạt hơn. 
-Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java chuẩn Clean Code và kết luận bằng 1 câu ghi nhớ."</div>
+                <pre><code class="prompt-advanced">"Bạn là một kỹ sư phần mềm cao cấp tại Google. Hãy giải thích khái niệm 'Tính Đa hình' cho một sinh viên đang gặp khó khăn trong việc hiểu OOP.
+
+Quy trình suy nghĩ: Hãy dùng hình ảnh 'Chiếc điều khiển từ xa' hoặc 'Âm thanh của các loài vật' làm ẩn dụ. Sau đó phân tích tại sao đa hình lại giúp code linh hoạt hơn.
+
+Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java chuẩn Clean Code và kết luận bằng 1 câu ghi nhớ."</code></pre>
                 <p style="margin-top: 5px;"><i>Kết quả AI trả về:</i> Đạt mức Xuất sắc. AI sử dụng hình ảnh ẩn dụ "Chiếc điều khiển từ xa" cực kỳ trực quan. Code Java sinh ra đạt chuẩn Clean Code, có tính ứng dụng cao, giúp người học nắm bắt bản chất chỉ trong 1 lần đọc.</p>
             </div>
             <div class="detail-block">
@@ -158,10 +166,14 @@ Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java c
                 <p><b>Quá trình:</b> Với vai trò Trưởng nhóm Kỹ thuật, tôi đã số hóa toàn bộ quy trình phân công công việc bằng sơ đồ Trello, tích hợp Automation để thông báo tự động khi một task chuyển trạng thái. Ứng dụng Google Calendar tích hợp Discord để nhắc nhở deadline tự động (Mention).</p>
                 <p style="margin-top: 10px;"><b>Kết quả:</b> Nhóm hoàn thành toàn bộ kịch bản, quay dựng video dài 7 phút trước deadline 12 giờ. Bản thân tôi đã thực hiện hơn 15 lượt comment sửa bài trên Google Docs và soạn một bộ Prompt Library dùng chung cho đồng đội.</p>
                 <p style="margin-top: 10px; font-weight: 600; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: BẢNG PHÂN CÔNG VÀ TIẾN ĐỘ TRÊN TRELLO/EXCEL]</p>
-                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
-                    <img src="files/images/week4_image1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                    <img src="files/images/week4_image2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                </div>
+                <figure>
+                    <img src="files/images/week4_image1.png" onerror="this.style.display='none'">
+                    <figcaption>Trello quản trị tác vụ trực quan</figcaption>
+                </figure>
+                <figure>
+                    <img src="files/images/week4_image2.png" onerror="this.style.display='none'">
+                    <figcaption>Bảng phân công chi tiết</figcaption>
+                </figure>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
@@ -196,10 +208,14 @@ Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java c
                 <b>Bước 2 (Hình ảnh):</b> Dùng DALL-E 3 tạo ra artwork mô tả "não bộ kết nối bằng mạch điện xanh" tượng trưng cho AI và tốc độ học tập.<br>
                 <b>Bước 3 (Thiết kế):</b> Đẩy dữ liệu vào Canva Magic Design, chọn bộ font không chân (Sans-serif) hiện đại để tối ưu hóa trải nghiệm đọc trên thiết bị số.</p>
                 <p style="margin-top: 15px; font-weight: 600; color: var(--text-primary);">[SẢN PHẨM HOÀN THIỆN: ẢNH VÀ INFOGRAPHIC]</p>
-                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
-                    <img src="files/images/week5_image1.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                    <img src="files/images/week5_image2.png" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color);" onerror="this.style.display='none'">
-                </div>
+                <figure>
+                    <img src="files/images/week5_image1.png" onerror="this.style.display='none'">
+                    <figcaption>Hình ảnh AI tạo sinh cho thiết kế trực quan</figcaption>
+                </figure>
+                <figure>
+                    <img src="files/images/week5_image2.png" onerror="this.style.display='none'">
+                    <figcaption>Dàn trang thiết kế chuyên nghiệp với AI</figcaption>
+                </figure>
             </div>
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
