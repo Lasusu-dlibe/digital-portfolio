@@ -1,0 +1,74 @@
+
+
+--- week2.docx ---
+BÁO CÁO PHÂN TÍCH HỌC THUẬT VỚI SỰ HỖ TRỢ CỦA AI
+Chủ đề: Tác động của Trí tuệ nhân tạo tạo sinh đến kỹ năng tự học và tư duy phản biện của sinh viên.
+Người thực hiện: Lã Quốc Sử      MSV: 25020354
+Công cụ AI sử dụng: Google Gemini 
+I. MỤC TIÊU VÀ LÝ DO CHỌN CHỦ ĐỀ
+Lý do chọn chủ đề: Sự bùng nổ của AI tạo sinh (Generative AI) đã thay đổi hoàn toàn cách sinh viên tiếp cận kiến thức. Đây là chủ đề có tính thách thức vì các nghiên cứu vẫn đang tranh cãi giữa việc AI là "trợ thủ" hay "kẻ thay thế" tư duy con người.
+Mục tiêu: Sử dụng AI để tổng hợp các góc nhìn học thuật đối lập, từ đó đánh giá thực trạng sử dụng AI trong học tập một cách khách quan.
+II. DANH MỤC TÀI LIỆU HỌC THUẬT NGHIÊN CỨU
+Tôi đã chọn 3 tài liệu uy tín (từ năm 2023-2024) để phân tích:
+Tài liệu 1: ChatGPT in Higher Education: Considerations for Academic Integrity and Student Learning (Cotton et al., 2023).
+Tài liệu 2: The Role of AI in Personalized Learning: A Review of ChatGPT’s Potential (Kasneci et al., 2023).
+Tài liệu 3: Guidance for generative AI in education and research(UNESCO (2023)). 
+III. QUÁ TRÌNH TƯƠNG TÁC VÀ TỔNG HỢP BẰNG AI
+1. Tóm tắt nội dung chính của mỗi tài liệu
+Thao tác: Sử dụng Prompt yêu cầu AI đóng vai một trợ lý nghiên cứu để trích xuất: Mục tiêu, Phương pháp và Kết quả chính.
+Kết quả: AI đã giúp tôi hệ thống hóa các khái niệm phức tạp như "Academic Integrity" (Cotton, 2023) hay "Personalized Learning" (Kasneci, 2023) một cách dễ hiểu.
+2. Phân tích điểm mạnh và điểm yếu của mỗi tài liệu
+Điể
+
+--- week3.docx ---
+BÁO CÁO: NGHIÊN CỨU VÀ TỐI ƯU HÓA PROMPT ENGINEERING TRONG HỌC TẬP
+Họ và tên: Lã Quốc Sử
+Mã sinh viên: 25020354
+Lớp: VNU1001_E252014
+I. LỰA CHỌN VÀ PHÂN TÍCH TÁC VỤ HỌC TẬP
+Để thực hiện bài tập này, tôi lựa chọn 3 tác vụ phổ biến trong việc học tập và giảng dạy khối ngành STEM:
+Giải thích một khái niệm phức tạp (Tính Đa hình trong Java): Đây là khái niệm trừu tượng, khó hình dung với người mới. Thách thức là làm sao để AI không chỉ đưa ra định nghĩa khô khan mà phải có ví dụ thực tế và code minh họa chuẩn xác.
+Tạo bộ câu hỏi ôn tập (Toán rời rạc - Lý thuyết đồ thị): Mục tiêu là tạo ra các câu hỏi có tính phân hóa từ thông hiểu đến vận dụng cao. Thách thức là AI thường tạo câu hỏi quá dễ nếu không được định hướng kỹ.
+Tóm tắt tài liệu học thuật (Bài báo về Xu hướng AI 2026): Cần lọc ra các số liệu, luận điểm chính và cấu trúc lại dưới dạng danh sách để dễ ghi nhớ thay vì đọc một văn bản dài hàng ngàn chữ.
+II. XÂY DỰNG VÀ THỬ NGHIỆM CÁC PHIÊN BẢN PROMPT
+1. Tác vụ: Giải thích "Tính Đa hình (Polymorphism)" trong Java
+Prompt Cơ bản: "Giải thích tính đa hình trong Java là gì."
+Prompt Cải tiến: "Giải thích tính đa hình trong lập trình Java cho sinh viên năm nhất. Hãy trình bày theo cấu trúc: Định nghĩa, Phân loại (Overloading & Overriding) và cho ví dụ code đơn giản."
+Prompt Nâng cao (Role + CoT + Few-shot):
+"Bạn là một kỹ sư phần mềm cao cấp tại Google. Hãy giải thích khái niệm 'Tính Đa hình' cho một sinh viên đang gặp khó khăn trong việc hiểu OOP. Quy trình suy nghĩ: Hãy dùng hình 
+
+--- week4.docx ---
+BÁO CÁO CÁ NHÂN
+Ứng dụng công cụ hợp tác trực tuyến trong dự án:AI đã tác động đến Marketing & Kinh doanh như thế nào
+Sinh viên: Lã Quốc Sử Lớp: IT1-K70Môn học: Nhập môn Công Nghệ số
+I. GIỚI THIỆU DỰ ÁN VÀ VAI TRÒ CÁ NHÂN
+Dự án "Tác động của AI đến Marketing & Kinh doanh" được thực hiện bởi nhóm 5 thành viên trong thời gian cao điểm 01 tuần. Với mục tiêu xây dựng một video phân tích chuyên sâu (7 phút) và báo cáo nghiên cứu, chúng tôi phải đối mặt với áp lực thời gian và khối lượng dữ liệu khổng lồ.
+Với vai trò là Trưởng nhóm Kỹ thuật & Điều phối số, nhiệm vụ của tôi không chỉ dừng lại ở việc nghiên cứu nội dung "AI trong phân tích dữ liệu kinh doanh" mà còn là người thiết lập hạ tầng công nghệ, quản trị tiến độ và đảm bảo luồng thông tin giữa các thành viên luôn thông suốt thông qua các công cụ số hóa.
+II. THIẾT LẬP VÀ TỐI ƯU HÓA KHÔNG GIAN LÀM VIỆC SỐ (Tiêu chí 1 & 2)
+Để đạt được hiệu suất cao nhất trong 7 ngày, tôi đã chủ động thiết lập hệ sinh thái công cụ tích hợp, tập trung vào việc tối ưu hóa thay vì chỉ sử dụng thông thường:
+Quản trị tác vụ với Trello (Kanban Method):
+Tôi thiết lập bảng công việc với các cột trạng thái: Backlog, In Progress, Review, Done.
+Tối ưu hóa: Sử dụng hệ thống Labels đa sắc để phân loại tính chất công việc (Đỏ: Ưu tiên cao, Tím: Kỹ thuật/Video, Vàng: Nội dung). Tôi tích hợp tính năng Automation để tự động thông báo khi một task được chuyển sang trạng thái "Review".
+Lưu trữ và Quản trị tài nguyên trên Google Drive:
+Xây dựng cấu trúc thư mục 3 cấ
+
+--- week5.docx ---
+BÁO CÁO DỰ ÁN SÁNG TẠO NỘI DUNG CÓ HỖ TRỢ BỞI AI
+Tên dự án: Cẩm nang phương pháp học tập chủ động cho sinh viên công nghệ.
+Sản phẩm: Bài viết chuyên sâu và Infographic minh họa.
+Người thực hiện: Lã Quốc Sử
+1. LỰA CHỌN DỰ ÁN VÀ CÁC CÔNG CỤ AI SỬ DỤNG
+Dự án tập trung vào việc tạo ra một bộ tài liệu hướng dẫn sinh viên cách áp dụng các phương pháp học tập như Active Recall và Spaced Repetition kết hợp với các công cụ số.
+Danh sách công cụ AI sử dụng:
+Google Gemini (AI tạo văn bản): Lên ý tưởng, lập dàn ý và viết nội dung chi tiết.
+DALL-E 3 / Midjourney (AI tạo hình ảnh): Tạo các hình ảnh minh họa trừu tượng về sự tập trung và não bộ.
+Canva AI - Magic Design (AI hỗ trợ thiết kế): Tự động dàn trang Infographic và đề xuất bố cục màu sắc.
+2. CHI TIẾT QUÁ TRÌNH SỬ DỤNG AI VÀ TÍCH HỢP ĐẦU RA
+2.1. Giai đoạn tạo nội dung (Gemini)
+Prompt 1: "Hãy đóng vai một chuyên gia giáo dục, lập dàn ý cho bài viết 2000 chữ về phương pháp Spaced Repetition dành cho sinh viên ngành IT."
+Kết quả: Nhận được dàn ý gồm 5 phần chính.
+Chỉnh sửa cá nhân: Tôi nhận thấy dàn ý của AI hơi chung chung. Tôi đã trực tiếp thêm vào phần "Ứng dụng trong việc học các hàm Java" để sát với thực tế ngành học của mình hơn.
+2.2. Giai đoạn tạo hình ảnh (DALL-E)
+Prompt 2: "An abstract digital art of a human brain connected by glowing blue circuits, representing high-speed learning and artificial intelligence, 4k, cinematic lighting."
+Kết quả: AI tạo ra hình ảnh rất ấn tượng nhưng màu sắc hơi tối.
+Chỉnh sửa cá nhân: Tôi sử dụng

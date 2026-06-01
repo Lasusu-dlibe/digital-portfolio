@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử Portfolio - Digital Journey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar">
+            <div class="user-info">
+                <div class="avatar" style="overflow: hidden;">
+                    <img src="files/avatar.png" alt="Lã Quốc Sử" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h2 class="user-name">Lã Quốc Sử</h2>
+                <p class="user-role">Công nghệ thông tin</p>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="menu-btn active" data-target="home">
+                    <i data-lucide="home"></i> Trang chủ
+                </button>
+                <button class="menu-btn" data-target="projects">
+                    <i data-lucide="folder"></i> Dự án
+                </button>
+                <button class="menu-btn" data-target="summary">
+                    <i data-lucide="award"></i> Tổng kết
+                </button>
+                <button class="menu-btn" data-target="skills">
+                    <i data-lucide="cpu"></i> Kỹ năng
+                </button>
+                <button class="menu-btn" data-target="contact">
+                    <i data-lucide="mail"></i> Liên hệ
+                </button>
+            </nav>
+
+            <div class="bottom-section">
+                <button class="menu-btn" id="theme-toggle">
+                    <i data-lucide="moon"></i> Dark Mode
+                </button>
+            </div>
+        </aside>
+
+        <!-- CENTER: Content Area -->
+        <main class="main-content">
+            <header class="header">
+                <h1 class="header-title" id="header-title">Sử Portfolio - Digital Journey</h1>
+            </header>
+
+            <div class="content-area" id="content-area">
+                <!-- Dynamic Content Will Be Injected Here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Main Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
