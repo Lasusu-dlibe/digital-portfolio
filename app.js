@@ -377,46 +377,7 @@ const views = {
         </div>
     `,
 
-    skills: () => `
-        <div class="view">
-            <div class="summary-grid">
-                <div class="detail-block">
-                    <h3><i data-lucide="code" style="display:inline; width:20px; height:20px; vertical-align:middle; margin-right:8px;"></i> Ngôn ngữ lập trình</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                        <span style="background: rgba(59,130,246,0.2); color: var(--text-accent); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">Java</span>
-                        <span style="background: rgba(59,130,246,0.2); color: var(--text-accent); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">Python</span>
-                    </div>
-                </div>
-                
-                <div class="detail-block">
-                    <h3><i data-lucide="layers" style="display:inline; width:20px; height:20px; vertical-align:middle; margin-right:8px;"></i> Framework & Thư viện</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                        <span style="background: rgba(139,92,246,0.2); color: #8b5cf6; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">JavaFX</span>
-                    </div>
-                </div>
 
-                <div class="detail-block">
-                    <h3><i data-lucide="tool" style="display:inline; width:20px; height:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ & Môi trường</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                        <span style="background: rgba(16,185,129,0.2); color: #10b981; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">Git / GitHub</span>
-                        <span style="background: rgba(16,185,129,0.2); color: #10b981; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">VS Code</span>
-                        <span style="background: rgba(16,185,129,0.2); color: #10b981; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">IntelliJ IDEA</span>
-                        <span style="background: rgba(16,185,129,0.2); color: #10b981; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">Figma</span>
-                    </div>
-                </div>
-
-                <div class="detail-block">
-                    <h3><i data-lucide="message-circle" style="display:inline; width:20px; height:20px; vertical-align:middle; margin-right:8px;"></i> Kỹ năng mềm</h3>
-                    <ul style="margin-top: 15px; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                        <li>Tư duy giải quyết vấn đề (Problem Solving)</li>
-                        <li>Làm việc nhóm (Teamwork) & Giao tiếp hiệu quả</li>
-                        <li>Kỹ năng tự học và nghiên cứu công nghệ mới</li>
-                        <li>Sử dụng thành thạo các công cụ AI hỗ trợ lập trình</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    `,
 
     contact: () => `
         <div class="view">
