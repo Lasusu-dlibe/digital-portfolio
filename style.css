@@ -489,12 +489,14 @@ body.light-theme .home-title {
 }
 
 .prompt-box, .prompt-advanced, .code-box {
+    display: block; /* Fix inline overlapping issue */
     font-family: 'Consolas', 'Fira Code', monospace;
     padding: 16px;
     border-radius: 6px;
     white-space: pre-wrap;
     overflow-x: auto;
     font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .prompt-box {
