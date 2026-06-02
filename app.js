@@ -352,31 +352,6 @@ const views = {
                 </div>
             </div>
         </div>
-    `,
-
-
-
-    contact: () => `
-        <div class="view">
-            <div style="max-width: 600px; margin: 0 auto;">
-                <div class="detail-block" style="text-align: center; padding: 40px 20px;">
-                    <div style="width: 80px; height: 80px; background: rgba(59,130,246,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; border: 2px solid var(--text-accent);">
-                        <i data-lucide="mail" style="width: 40px; height: 40px; color: var(--text-accent);"></i>
-                    </div>
-                    <h2 style="font-size: 2rem; margin-bottom: 10px;">Kết nối với tôi</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Tôi luôn sẵn sàng cho những cơ hội học tập và hợp tác mới. Đừng ngần ngại liên hệ!</p>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
-                        <a href="mailto:laquocsu2605@gmail.com" style="display: flex; align-items: center; gap: 10px; color: var(--text-primary); text-decoration: none; padding: 12px 24px; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 8px; width: 100%; justify-content: center; transition: all 0.2s;">
-                            <i data-lucide="mail"></i> laquocsu2605@gmail.com
-                        </a>
-                        <a href="https://github.com/lasusu-dlibe" target="_blank" style="display: flex; align-items: center; gap: 10px; color: var(--text-primary); text-decoration: none; padding: 12px 24px; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 8px; width: 100%; justify-content: center; transition: all 0.2s;">
-                            <i data-lucide="github"></i> github.com/lasusu-dlibe
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     `
 };
 
@@ -392,8 +367,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const titles = {
     home: "Sử Portfolio - Digital Journey",
     projects: "Danh sách Dự án & Bài tập",
-    summary: "Tổng kết Hành trình",
-    contact: "Thông tin liên hệ"
+    summary: "Tổng kết Hành trình"
 };
 
 // Initialize app
