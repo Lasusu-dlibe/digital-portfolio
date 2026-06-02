@@ -400,15 +400,17 @@ body.light-theme .header {
 }
 
 .cyber-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    padding-left: 24px;
+    text-indent: -24px;
+    line-height: 1.6;
 }
 
 .cyber-list span {
     color: var(--text-secondary);
     font-size: 0.8rem;
-    margin-top: 4px;
+    display: inline-block;
+    width: 24px;
+    text-indent: 0;
 }
 
 .visual-placeholder {
