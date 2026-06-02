@@ -238,41 +238,53 @@ Yêu cầu: Trình bày bằng ngôn ngữ dễ hiểu, có ví dụ code Java c
 
 const views = {
     home: () => `
-        <div class="view home-view" style="flex-direction: column; align-items: flex-start; max-width: 900px; margin: 0 auto;">
-            <div style="margin-bottom: 30px;">
-                <h1 class="home-title" style="font-size: 2rem; margin-bottom: 10px;"><i data-lucide="pin" style="color: #ef4444; width: 28px; height: 28px; vertical-align: middle;"></i> CHÀO MỪNG ĐẾN VỚI DIGITAL PORTFOLIO CỦA TÔI</h1>
-                <p style="font-size: 1.1rem; font-style: italic; color: var(--text-secondary);">Một không gian lưu trữ, học tập và định hình tư duy công nghệ trong kỷ nguyên số.</p>
+        <div class="view home-view">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h1 class="home-title">
+                        <i data-lucide="pin" class="hero-icon"></i> CHÀO MỪNG ĐẾN VỚI
+                        <br>
+                        <span class="gradient-text">DIGITAL PORTFOLIO CỦA TÔI</span>
+                    </h1>
+                    <p class="hero-subtitle">Một không gian lưu trữ, học tập và định hình tư duy công nghệ trong kỷ nguyên số.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="files/images/cyberpunk_laptop.png" alt="Cyberpunk Tech">
+                </div>
             </div>
 
-            <div class="detail-block" style="width: 100%; margin-bottom: 20px;">
-                <h3 style="font-size: 1.2rem; color: #a855f7; display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
+            <div class="detail-block cyber-card card-purple">
+                <div class="cyber-decor"></div>
+                <h3 class="card-title-neon text-purple">
                     <i data-lucide="user"></i> GIỚI THIỆU CHUNG
                 </h3>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Họ và tên:</b> Lã Quốc Sử</li>
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Ngành học:</b> Công nghệ thông tin (IT) - Đại học Công nghệ (VNU-UET).</li>
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Sở thích:</b> Lập trình phần mềm, tối ưu hóa quy trình làm việc bằng công nghệ, phát triển ứng dụng di động và tìm hiểu về cơ chế vận hành của các mô hình trí tuệ nhân tạo lớn (LLMs).</li>
+                <ul class="cyber-list">
+                    <li><span>○</span> <b>Họ và tên:</b> Lã Quốc Sử</li>
+                    <li><span>○</span> <b>Ngành học:</b> Công nghệ thông tin (IT) - Đại học Công nghệ (VNU-UET).</li>
+                    <li><span>○</span> <b>Sở thích:</b> Lập trình phần mềm, tối ưu hóa quy trình làm việc bằng công nghệ, phát triển ứng dụng di động và tìm hiểu về cơ chế vận hành của các mô hình trí tuệ nhân tạo lớn (LLMs).</li>
                 </ul>
             </div>
 
-            <div class="detail-block" style="width: 100%; margin-bottom: 20px;">
-                <h3 style="font-size: 1.2rem; color: #ec4899; display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
+            <div class="detail-block cyber-card card-pink">
+                <div class="cyber-decor"></div>
+                <h3 class="card-title-neon text-pink">
                     <i data-lucide="target"></i> MỤC TIÊU HỌC TẬP & ĐỊNH HƯỚNG PHÁT TRIỂN
                 </h3>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Mục tiêu ngắn hạn:</b> Làm chủ các công cụ cốt lõi trong môi trường số, xây dựng tư duy cộng tác trực tuyến hiệu quả và ứng dụng AI như một "cộng sự" đắc lực để tối ưu hóa hiệu suất học tập tại UET.</li>
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Định hướng dài hạn:</b> Trở thành một Kỹ sư phần mềm (Software Engineer) không chỉ giỏi code mà còn có tư duy giải quyết vấn đề (problem-solving) tốt, biết ứng dụng AI một cách có trách nhiệm để tạo ra các giá trị thực cho xã hội.</li>
+                <ul class="cyber-list">
+                    <li><span>○</span> <b>Mục tiêu ngắn hạn:</b> Làm chủ các công cụ cốt lõi trong môi trường số, xây dựng tư duy cộng tác trực tuyến hiệu quả và ứng dụng AI như một "cộng sự" đắc lực để tối ưu hóa hiệu suất học tập tại UET.</li>
+                    <li><span>○</span> <b>Định hướng dài hạn:</b> Trở thành một Kỹ sư phần mềm (Software Engineer) không chỉ giỏi code mà còn có tư duy giải quyết vấn đề (problem-solving) tốt, biết ứng dụng AI một cách có trách nhiệm để tạo ra các giá trị thực cho xã hội.</li>
                 </ul>
             </div>
 
-            <div class="detail-block" style="width: 100%;">
-                <h3 style="font-size: 1.2rem; color: #3b82f6; display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
+            <div class="detail-block cyber-card card-blue">
+                <div class="cyber-decor"></div>
+                <h3 class="card-title-neon text-blue">
                     <i data-lucide="monitor"></i> MỤC TIÊU CỦA PORTFOLIO NÀY
                 </h3>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Hệ thống hóa năng lực:</b> Minh chứng trực quan cho những kỹ năng số và tư duy ứng dụng AI mà bản thân đã tích lũy qua môn học UET.A14.</li>
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Lưu trữ & Chia sẻ:</b> Tạo một "bản sơ yếu lý lịch số" chuyên nghiệp, dễ dàng chia sẻ với giảng viên, bạn bè và các nhà tuyển dụng trong tương lai.</li>
-                    <li><span style="display:inline-block; width: 20px;">○</span> <b>Đánh giá bản thân:</b> Nhìn nhận lại hành trình phát triển để liên tục cải tiến tư duy học tập.</li>
+                <ul class="cyber-list">
+                    <li><span>○</span> <b>Hệ thống hóa năng lực:</b> Minh chứng trực quan cho những kỹ năng số và tư duy ứng dụng AI mà bản thân đã tích lũy qua môn học UET.A14.</li>
+                    <li><span>○</span> <b>Lưu trữ & Chia sẻ:</b> Tạo một "bản sơ yếu lý lịch số" chuyên nghiệp, dễ dàng chia sẻ với giảng viên, bạn bè và các nhà tuyển dụng trong tương lai.</li>
+                    <li><span>○</span> <b>Đánh giá bản thân:</b> Nhìn nhận lại hành trình phát triển để liên tục cải tiến tư duy học tập.</li>
                 </ul>
             </div>
         </div>

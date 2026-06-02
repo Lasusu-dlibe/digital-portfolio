@@ -2,18 +2,18 @@
    CSS Variables & Theme Tokens
    ========================================= */
    :root {
-    /* Color Palette - Dark Mode Default */
-    --bg-main: #121212; /* Developer Dark */
-    --bg-sidebar: #1e1e1e;
-    --bg-card: rgba(30, 30, 30, 0.7);
-    --bg-card-hover: rgba(45, 45, 45, 0.8);
+    /* Color Palette - Cyberpunk Dark */
+    --bg-main: #0b0f19; /* Deep Cyber Dark */
+    --bg-sidebar: #111827;
+    --bg-card: rgba(17, 24, 39, 0.6);
+    --bg-card-hover: rgba(31, 41, 55, 0.8);
     
-    --text-primary: #e0e0e0;
-    --text-secondary: #a0a0a0;
-    --text-accent: #00adb5; /* Neon Blue */
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-accent: #00d2ff; /* Neon Cyan */
     
-    --border-color: rgba(255, 255, 255, 0.1);
-    --border-hover: rgba(0, 173, 181, 0.5);
+    --border-color: rgba(255, 255, 255, 0.05);
+    --border-hover: rgba(0, 210, 255, 0.5);
     
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -167,9 +167,11 @@ p {
 }
 
 .menu-btn.active {
-    background-color: rgba(59, 130, 246, 0.1);
+    background-color: rgba(0, 210, 255, 0.1);
     color: var(--text-accent);
     font-weight: 600;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.1);
 }
 
 .bottom-section {
@@ -207,6 +209,26 @@ body.light-theme .header {
     font-weight: 600;
 }
 
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 20px;
+    color: #a7f3d0;
+    font-size: 0.875rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #10b981;
+}
+
 .content-area {
     flex: 1;
     overflow-y: auto;
@@ -237,65 +259,159 @@ body.light-theme .header {
 }
 
 /* Home View */
+/* Cyberpunk Home View */
 .home-view {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
     margin: 0 auto;
-    min-height: 100%;
+    padding-bottom: 40px;
 }
 
-.home-text {
-    flex: 1;
-    min-width: 300px;
+.hero-section {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    flex: 1;
 }
 
 .home-title {
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.hero-icon {
+    color: #ef4444; 
+    width: 32px; 
+    height: 32px; 
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 3rem;
 }
 
-body.light-theme .home-title {
-    background: linear-gradient(135deg, #0f172a 0%, #64748b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.home-subtitle {
-    font-size: 1.5rem;
-    color: var(--text-accent);
-    margin-bottom: 10px;
-}
-
-.home-desc {
+.hero-subtitle {
     font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.hero-image {
+    width: 350px;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.4));
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Cyber Cards */
+.cyber-card {
+    position: relative;
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 0 !important;
+    border: 1px solid transparent;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cyber-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(circle at 100% 0%, rgba(255,255,255,0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cyber-decor {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 10px;
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 2px,
+        rgba(255,255,255,0.2) 2px,
+        rgba(255,255,255,0.2) 4px
+    );
+}
+
+.card-purple {
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: inset 0 0 20px rgba(139, 92, 246, 0.05), 0 0 15px rgba(139, 92, 246, 0.1);
+}
+
+.card-pink {
+    border-color: rgba(236, 72, 153, 0.5);
+    box-shadow: inset 0 0 20px rgba(236, 72, 153, 0.05), 0 0 15px rgba(236, 72, 153, 0.1);
+}
+
+.card-blue {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.05), 0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+.card-title-neon {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-purple { color: #c084fc; text-shadow: 0 0 10px rgba(192, 132, 252, 0.5); }
+.text-pink { color: #f472b6; text-shadow: 0 0 10px rgba(244, 114, 182, 0.5); }
+.text-blue { color: #60a5fa; text-shadow: 0 0 10px rgba(96, 165, 250, 0.5); }
+
+.cyber-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.home-visual {
-    flex: 1;
-    min-width: 300px;
+.cyber-list li {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cyber-list span {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 4px;
 }
 
 .visual-placeholder {
-    width: 280px;
-    height: 280px;
-    background: var(--bg-card);
-    border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
