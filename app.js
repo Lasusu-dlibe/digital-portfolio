@@ -256,35 +256,39 @@ const views = {
             <div class="detail-block cyber-card card-purple">
                 <div class="cyber-decor"></div>
                 <h3 class="card-title-neon text-purple">
-                    <i data-lucide="user"></i> GIỚI THIỆU CHUNG
+                    <i data-lucide="user"></i> THÔNG TIN HỌC THUẬT NỀN TẢNG
                 </h3>
                 <ul class="cyber-list">
                     <li><span>○</span> <b>Họ và tên:</b> Lã Quốc Sử</li>
-                    <li><span>○</span> <b>Ngành học:</b> Công nghệ thông tin (IT) - Đại học Công nghệ (VNU-UET).</li>
-                    <li><span>○</span> <b>Sở thích:</b> Lập trình phần mềm, tối ưu hóa quy trình làm việc bằng công nghệ, phát triển ứng dụng di động và tìm hiểu về cơ chế vận hành của các mô hình trí tuệ nhân tạo lớn (LLMs).</li>
+                    <li><span>○</span> <b>Mã sinh viên:</b> 25020354</li>
+                    <li><span>○</span> <b>Ngành học:</b> Công nghệ thông tin (Information Technology)</li>
+                    <li><span>○</span> <b>Lớp học phần:</b> IT1-K70 - Khoa Công nghệ thông tin</li>
+                    <li><span>○</span> <b>Cơ sở đào tạo:</b> Trường Đại học Công nghệ – Đại học Quốc gia Hà Nội (VNU-UET)</li>
+                    <li><span>○</span> <b>Học phần nghiên cứu:</b> Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo (Mã môn: UET.A14)</li>
                 </ul>
             </div>
 
             <div class="detail-block cyber-card card-pink">
                 <div class="cyber-decor"></div>
                 <h3 class="card-title-neon text-pink">
-                    <i data-lucide="target"></i> MỤC TIÊU HỌC TẬP & ĐỊNH HƯỚNG PHÁT TRIỂN
+                    <i data-lucide="target"></i> MỤC TIÊU HỌC TẬP & KHÁT VỌNG NGHỀ NGHIỆP
                 </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Là một sinh viên đang theo học ngành Công nghệ thông tin tại môi trường học thuật UET, tôi luôn nhận thức sâu sắc rằng sự bùng nổ của kỷ nguyên số và trí tuệ nhân tạo (AI) đã tái định hình hoàn toàn tiêu chuẩn của một kỹ sư phần mềm. Một lập trình viên hiện đại không chỉ đơn thuần là một bộ máy gõ code (coder), mà phải là một người có tư duy hệ thống, biết sử dụng công nghệ số để tối ưu hóa quy trình và giải quyết các bài toán thực tế một cách thông minh.</p>
                 <ul class="cyber-list">
-                    <li><span>○</span> <b>Mục tiêu ngắn hạn:</b> Làm chủ các công cụ cốt lõi trong môi trường số, xây dựng tư duy cộng tác trực tuyến hiệu quả và ứng dụng AI như một "cộng sự" đắc lực để tối ưu hóa hiệu suất học tập tại UET.</li>
-                    <li><span>○</span> <b>Định hướng dài hạn:</b> Trở thành một Kỹ sư phần mềm (Software Engineer) không chỉ giỏi code mà còn có tư duy giải quyết vấn đề (problem-solving) tốt, biết ứng dụng AI một cách có trách nhiệm để tạo ra các giá trị thực cho xã hội.</li>
+                    <li><span>○</span> <b>Mục tiêu học tập ngắn hạn:</b> Trong suốt quá trình đào tạo tại nhà trường, tôi tập trung cao độ vào việc làm chủ các nguyên lý nền tảng của Lập trình hướng đối tượng (OOP), cấu trúc dữ liệu và giải thuật thông qua ngôn ngữ Java. Song song với đó, tôi tích cực rèn luyện kỹ năng xây dựng giao diện đồ họa người dùng với JavaFX và ứng dụng nâng cao kỹ nghệ Prompt Engineering để biến AI tạo sinh thành một "trợ lý lập trình ảo" đắc lực, hỗ trợ trong việc giải thích mã nguồn, tối ưu thuật toán và tăng tốc gỡ lỗi (debug).</li>
+                    <li><span>○</span> <b>Định hướng phát triển dài hạn:</b> Sau khi tốt nghiệp và nhận tấm bằng Kỹ sư Công nghệ thông tin chuẩn mực tại UET, tôi định hướng bản thân phát triển trở thành một Kỹ sư phần mềm toàn diện (Software Engineer / Full-Stack Developer). Tôi khát khao được cống hiến trong các dự án phần mềm quy mô lớn tại các doanh nghiệp công nghệ, nơi tôi có thể kết hợp nhuần nhuyễn giữa tư duy kỹ thuật hệ thống chặt chẽ với bộ khung đạo đức AI có trách nhiệm nhằm tạo ra các sản phẩm công nghệ minh bạch, bảo mật và mang lại giá trị bền vững cho xã hội.</li>
                 </ul>
             </div>
 
             <div class="detail-block cyber-card card-blue">
                 <div class="cyber-decor"></div>
                 <h3 class="card-title-neon text-blue">
-                    <i data-lucide="monitor"></i> MỤC TIÊU CỦA PORTFOLIO NÀY
+                    <i data-lucide="monitor"></i> LÝ DO XÂY DỰNG & MỤC TIÊU CỦA DIGITAL PORTFOLIO
                 </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Đối với một sinh viên CNTT, việc tích lũy kiến thức qua sách vở hay lưu trữ tài liệu theo phương thức truyền thống đã không còn bắt kịp tốc độ thay đổi chóng mặt của công nghệ số. Việc tự tay thiết lập và xây dựng không gian Digital Portfolio cá nhân này bằng mã nguồn sạch (Semantic HTML/CSS) kết hợp quản trị kho lưu trữ qua Git/GitHub chính là minh chứng thực tế nhất cho năng lực số ứng dụng của bản thân, hướng tới hai mục tiêu cốt lõi:</p>
                 <ul class="cyber-list">
-                    <li><span>○</span> <b>Hệ thống hóa năng lực:</b> Minh chứng trực quan cho những kỹ năng số và tư duy ứng dụng AI mà bản thân đã tích lũy qua môn học UET.A14.</li>
-                    <li><span>○</span> <b>Lưu trữ & Chia sẻ:</b> Tạo một "bản sơ yếu lý lịch số" chuyên nghiệp, dễ dàng chia sẻ với giảng viên, bạn bè và các nhà tuyển dụng trong tương lai.</li>
-                    <li><span>○</span> <b>Đánh giá bản thân:</b> Nhìn nhận lại hành trình phát triển để liên tục cải tiến tư duy học tập.</li>
+                    <li><span>○</span> <b>Hệ thống hóa minh chứng năng lực số thực tế:</b> Trang Portfolio số này đóng vai trò như một "hồ sơ năng lực động" (Dynamic Portfolio), lưu trữ một cách trực quan, minh bạch và khoa học toàn bộ quy trình thực hiện của 6 tuần bài tập thành phần. Từ khâu quản lý cấu trúc tệp tin (Bài 1), lọc thông tin học thuật (Bài 2), kỹ thuật Prompt Engineering nâng cao (Bài 3), điều phối dự án nhóm theo mô hình Kanban (Bài 4), sáng tạo nội dung đa phương tiện (Bài 5) cho đến việc xây dựng bộ quy tắc liêm chính học thuật (Bài 6). Tất cả đều được trình bày rõ ràng, dễ tiếp cận và có tính đối soát cao theo đúng rubric đánh giá của trường.</li>
+                    <li><span>○</span> <b>Khẳng định năng lực tư duy phản biện và tự học:</b> Thay vì chỉ trưng bày các sản phẩm cuối cùng một cách hời hợt, nội dung portfolio tập trung phân tích sâu sắc vào các bài học kinh nghiệm, những khó khăn thực tế và giải pháp công nghệ sáng tạo đã được áp dụng để giải quyết thách thức. Qua đó thể hiện năng lực tự phản tỉnh (self-reflection) và khả năng thích ứng linh hoạt trước các công cụ công nghệ mới – đây chính là chìa khóa vàng giúp một lập trình viên liên tục nâng cấp bản thân trong kỷ nguyên số.</li>
                 </ul>
             </div>
         </div>
