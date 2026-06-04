@@ -11,32 +11,61 @@ const projectsData = [
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
-                <p>Thiết lập cấu trúc thư mục tối ưu và quy tắc đặt tên tệp (Naming Convention) khoa học để quản trị tài nguyên số của dự án nhóm, loại bỏ hoàn toàn việc nhầm lẫn các phiên bản trong quá trình làm việc chung.</p>
+                <p>Làm chủ các kỹ năng cốt lõi trong quản trị hệ thống tập tin cục bộ trên hệ điều hành Windows 11; xây dựng quy chuẩn đặt tên và tổ chức dữ liệu một cách khoa học để tối ưu hóa hiệu suất làm việc, chuẩn bị cho các dự án lập trình phần mềm phức tạp trong tương lai.</p>
             </div>
+            
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="tool" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Công cụ sử dụng</h3>
-                <ul style="padding-left: 20px; color: var(--text-secondary);">
+                <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
                     <li>Hệ điều hành Windows 11 File Explorer.</li>
-                    <li>Không gian lưu trữ đám mây Google Drive (Google Workspace).</li>
+                    <li>Công cụ lưu trữ đám mây OneDrive (để đồng bộ hóa dữ liệu cá nhân).</li>
                 </ul>
             </div>
+            
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="activity" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Quá trình thực hiện & Kết quả đạt được</h3>
-                <p><b>Quá trình:</b> Với vai trò Trưởng nhóm Kỹ thuật, tôi đã phân chia dữ liệu dự án thành cấu trúc 3 cấp rõ ràng. Đồng thời áp dụng quy chuẩn đặt tên tệp nghiêm ngặt theo định dạng: <code>YYYYMMDD_FileName_Version</code>.</p>
-                <p style="margin-top: 10px;"><b>Sản phẩm cuối cùng:</b> Hệ thống thư mục logic giúp nhóm 5 thành viên truy cập và đồng bộ tài nguyên tức thì trong 1 tuần cao điểm của dự án.</p>
+                <p style="margin-bottom: 10px;">Quy trình thực hành được thực hiện tuần tự và chuẩn hóa qua các bước logic sau:</p>
+                <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                    <li><b>Bước 1 (Khởi tạo không gian làm việc):</b> Truy cập vào thư mục Documents trên OneDrive cá nhân, thực hiện click chuột phải chọn New -> Folder để tạo thư mục gốc.</li>
+                    <li><b>Bước 2 (Đặt tên chuẩn hóa):</b> Tiến hành đặt tên cho thư mục mới theo đúng định dạng định danh cá nhân: ThucHanh_Lã Quốc Sử.</li>
+                    <li><b>Bước 3 (Tạo lập tệp tin thô):</b> Truy cập vào bên trong thư mục vừa tạo, sử dụng lệnh New -> Text Document để khởi tạo một tệp văn bản thô .txt mặc định.</li>
+                    <li><b>Bước 4 (Đổi tên & Phân loại dữ liệu):</b> Sử dụng tính năng Rename (F2) trên thanh công cụ Windows 11 để đổi tên tệp tin ban đầu thành GhiChu.txt. Sau đó, tiến hành nâng cấp nội dung và điều chỉnh tên thành GhiChuQuanTrong.txt nhằm thể hiện mức độ ưu tiên của dữ liệu.</li>
+                    <li><b>Bước 5 (Xây dựng cấu trúc thư mục phân cấp):</b> Tiếp tục sử dụng lệnh New -> Folder để tạo một thư mục con cấp hai có tên là TaiLieu nằm bên trong thư mục gốc, phục vụ cho việc bao đóng và phân loại dữ liệu.</li>
+                    <li><b>Bước 6 (Thao tác Sao chép - Copy/Paste):</b> Click chọn tệp GhiChuQuanTrong.txt, sử dụng tổ hợp phím hệ thống Ctrl + C (hoặc icon Copy trên context menu) để sao chép, sau đó truy cập vào folder TaiLieu và nhấn Ctrl + V để nhân bản tệp tin.</li>
+                    <li><b>Bước 7 (Thao tác Di chuyển - Cut/Paste):</b> Quay trở lại thư mục gốc, tạo thêm một tệp tin mới có tên là DiChuyen.txt. Sử dụng lệnh Cut (Ctrl + X) để cắt tệp tin này, sau đó truy cập vào folder TaiLieu và nhấn Ctrl + V để di chuyển hoàn toàn tệp vào không gian lưu trữ mới.</li>
+                </ul>
                 
-                <h4 style="margin-top: 15px; color: var(--text-primary);">[HÌNH ẢNH MINH HỌA: CẤU TRÚC THƯ MỤC DỰ ÁN]</h4>
-                <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 10px;">(Ảnh chụp màn hình cấu trúc thư mục Google Drive được đính kèm trong tài liệu)</p>
-                <div class="prompt-box">📂 Drive của tôi > [2026]_AI_Impact_Marketing
-├── 📂 01_Quản_trị_Dự_án
-├── 📂 02_Nghiên_cứu_Nội_dung
-├── 📂 03_Tư_liệu_Video
-├── 📂 04_Sản_phẩm_Cuối</div>
+                <h4 style="margin-top: 20px; margin-bottom: 10px; color: var(--text-primary); text-transform: uppercase;">🖥️ CẤU TRÚC CÂY THƯ MỤC SAU KHI HOÀN THÀNH THỰC HÀNH:</h4>
+                <div class="prompt-box">📂 Documents (OneDrive - Personal)/
+└── 📂 ThucHanh_Lã Quốc Sử/
+    ├── 📄 GhiChuQuanTrong.txt (File gốc)
+    └── 📂 TaiLieu/
+        ├── 📄 GhiChuQuanTrong.txt (Bản sao chép)
+        └── 📄 DiChuyen.txt (Bản di chuyển từ folder gốc)</div>
             </div>
+
             <div class="detail-block">
-                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra</h3>
-                <p><b>Khó khăn:</b> Ban đầu các thành viên quen lưu tệp bừa bãi và đặt tên tùy ý (ví dụ: video_final.mp4, script_moi.docx), gây xung đột phiên bản.<br><br>
-                <b>Bài học:</b> Tổ chức dữ liệu khoa học và thống nhất quy chuẩn đặt tên ngay từ ngày đầu tiên là nền móng cốt lõi quyết định 50% sự thành công khi làm việc nhóm trong môi trường số.</p>
+                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="image" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Minh chứng thực tế từ hệ thống (Ảnh chụp màn hình)</h3>
+                <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                    <li><b>Ảnh 1:</b> Thao tác click chuột phải chọn New -> Folder trong thư mục Documents.</li>
+                    <li><b>Ảnh 2:</b> Thư mục ThucHanh_Lã Quốc Sử được khởi tạo thành công trên hệ thống.</li>
+                    <li><b>Ảnh 3:</b> Thao tác tạo tệp tin văn bản thô Text Document bên trong thư mục gốc.</li>
+                    <li><b>Ảnh 4:</b> Sử dụng tính năng Rename để đổi tên tệp tin thành GhiChu.txt.</li>
+                    <li><b>Ảnh 5:</b> Khởi tạo thư mục con cấp hai mang tên TaiLieu.</li>
+                    <li><b>Ảnh 6 & 7:</b> Quy trình thực hiện lệnh Sao chép (Ctrl + C) tệp GhiChuQuanTrong.txt và Dán (Ctrl + V) vào bên trong thư mục TaiLieu.</li>
+                    <li><b>Ảnh 8, 9 & 10:</b> Thao tác tạo mới tệp DiChuyen.txt và dùng lệnh Di chuyển dữ liệu để đưa tệp vào folder đích.</li>
+                </ul>
+                <p style="font-style: italic; font-size: 0.9rem; margin-top: 10px; color: var(--text-secondary);">(Ghi chú: Tại mục này, bạn có thể tự chèn các thẻ <code>&lt;img&gt;</code> tương ứng với các ảnh chụp màn hình vào file <code>app.js</code> sau này).</p>
+            </div>
+
+            <div class="detail-block">
+                <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="alert-triangle" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Khó khăn & Bài học rút ra từ thực nghiệm</h3>
+                <p><b>Khó khăn gặp phải:</b> Giao diện Context Menu mới của Windows 11 đã ẩn bớt các dòng chữ lệnh truyền thống (như Copy, Paste, Rename) và thay thế hoàn toàn bằng các biểu tượng icon nằm ở thanh công cụ phía trên. Điều này ban đầu gây ra một chút bỡ ngỡ trong việc định vị nhanh thao tác. Ngoài ra, việc quản lý phần mở rộng của tệp tin (.txt) nếu không bật chế độ "File name extensions" trong mục View rất dễ dẫn đến lỗi đặt tên sai định dạng (ví dụ: DiChuyen.txt.txt).</p>
+                <p style="margin-top: 10px; margin-bottom: 5px;"><b>Bài học rút ra (Tư duy Kỹ thuật):</b></p>
+                <ol style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                    <li><b>Làm chủ phím tắt hệ thống:</b> Việc sử dụng thành thạo các tổ hợp phím nóng như F2 (Đổi tên), Ctrl + C / Ctrl + X / Ctrl + V giúp tối ưu hóa tốc độ tương tác với hệ điều hành nhanh hơn 50% so với việc click chuột thủ công.</li>
+                    <li><b>Tầm quan trọng của tổ chức cấu trúc dữ liệu:</b> Đối với một developer, kỹ năng tổ chức cây thư mục mạch lạc, phân cấp rõ ràng ngay trên máy tính cá nhân chính là bước tập dượt quan trọng để quản lý các package, source code và module mã nguồn trong các dự án phần mềm lớn sau này, tránh việc thất lạc cấu trúc cấu hình hệ thống.</li>
+                </ol>
             </div>
         `
     },
