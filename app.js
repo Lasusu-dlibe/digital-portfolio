@@ -345,6 +345,17 @@ const views = {
         const fileExt = project.file ? project.file.split('.').pop().toLowerCase() : '';
         const canPreview = fileExt === 'pdf' || fileExt === 'docx' || fileExt === 'doc';
         
+        // Build file viewer URL
+        let viewerSrc = '';
+        if (canPreview && project.file) {
+            if (fileExt === 'pdf') {
+                viewerSrc = `files/${project.file}`;
+            } else if (fileExt === 'docx' || fileExt === 'doc') {
+                const fullFileUrl = `https://lasusu-dlibe.github.io/digital-portfolio/files/${project.file}`;
+                viewerSrc = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(fullFileUrl)}`;
+            }
+        }
+        
         return `
         <div class="view project-detail">
             <button class="back-btn" onclick="navigate('projects')">
@@ -359,13 +370,12 @@ const views = {
                     <h2 class="detail-title">${project.title}</h2>
                     <p style="color: var(--text-secondary); margin-top: 5px;">${project.shortDesc}</p>
                     <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
-                        ${project.file && canPreview ? `<button class="btn-file-viewer" onclick="toggleFileViewer('${project.id}')"><i data-lucide="file-text" style="width: 16px; height: 16px;"></i> Xem & Tải file</button>` : ''}
-                        ${project.file && !canPreview ? `<a href="files/${project.file}" target="_blank" download class="btn-file-viewer"><i data-lucide="download" style="width: 16px; height: 16px;"></i> Tải file</a>` : ''}
+                        ${project.file ? `<a href="files/${project.file}" download class="btn-file-viewer"><i data-lucide="download" style="width: 16px; height: 16px;"></i> Tải file</a>` : ''}
                     </div>
                 </div>
             </div>
 
-            ${project.file && canPreview ? `
+            ${canPreview && viewerSrc ? `
             <div class="file-viewer-container" id="file-viewer-${project.id}">
                 <div class="file-viewer-header">
                     <div class="file-viewer-title">
@@ -389,7 +399,7 @@ const views = {
                     <iframe 
                         id="file-iframe-${project.id}"
                         class="file-viewer-iframe"
-                        src=""
+                        src="${viewerSrc}"
                         frameborder="0"
                         allowfullscreen
                         onload="document.getElementById('file-loading-${project.id}').style.display='none';"
@@ -517,32 +527,9 @@ window.loadProjectDetail = function(projectId) {
         contentArea.innerHTML = views.projectDetail(project);
         lucide.createIcons();
         contentArea.scrollTop = 0;
-        
-        // Auto-load file viewer
-        autoLoadFileViewer(project);
     }
 };
 
-// Auto-load file viewer when entering project detail
-function autoLoadFileViewer(project) {
-    if (!project || !project.file) return;
-    
-    const fileExt = project.file.split('.').pop().toLowerCase();
-    if (fileExt !== 'pdf' && fileExt !== 'docx' && fileExt !== 'doc') return;
-    
-    const iframe = document.getElementById(`file-iframe-${project.id}`);
-    if (!iframe) return;
-    
-    const fileUrl = `files/${project.file}`;
-    
-    if (fileExt === 'pdf') {
-        iframe.src = fileUrl;
-    } else if (fileExt === 'docx' || fileExt === 'doc') {
-        const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-        const fullFileUrl = baseUrl + fileUrl;
-        iframe.src = `https://docs.google.com/gview?url=${encodeURIComponent(fullFileUrl)}&embedded=true`;
-    }
-}
 
 // Theme Toggle Function
 function toggleTheme() {
