@@ -961,6 +961,13 @@ body.light-theme .file-viewer-loading {
     box-shadow: 0 2px 12px rgba(0,0,0,0.15) !important;
     margin: 0 auto !important;
     border-radius: 2px;
+    color: #000; /* Base text color for docx */
+}
+
+/* Prevent global p styling from overriding docx paragraph colors */
+.docx-viewer-container .docx-wrapper > section.docx p,
+.docx-viewer-container .docx-wrapper > section.docx span {
+    color: inherit;
 }
 
 
