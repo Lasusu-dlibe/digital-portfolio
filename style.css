@@ -938,6 +938,32 @@ body.light-theme .file-viewer-loading {
     background: #fff;
 }
 
+/* DOCX Viewer Container */
+.docx-viewer-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #e8e8e8;
+    padding: 20px 0;
+}
+
+.docx-viewer-container .docx-wrapper {
+    background: #e8e8e8 !important;
+    padding: 20px 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.docx-viewer-container .docx-wrapper > section.docx {
+    background: #fff !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15) !important;
+    margin: 0 auto !important;
+    border-radius: 2px;
+}
+
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;

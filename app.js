@@ -345,17 +345,6 @@ const views = {
         const fileExt = project.file ? project.file.split('.').pop().toLowerCase() : '';
         const canPreview = fileExt === 'pdf' || fileExt === 'docx' || fileExt === 'doc';
         
-        // Build file viewer URL
-        let viewerSrc = '';
-        if (canPreview && project.file) {
-            if (fileExt === 'pdf') {
-                viewerSrc = `files/${project.file}`;
-            } else if (fileExt === 'docx' || fileExt === 'doc') {
-                const fullFileUrl = `https://lasusu-dlibe.github.io/digital-portfolio/files/${project.file}`;
-                viewerSrc = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(fullFileUrl)}`;
-            }
-        }
-        
         return `
         <div class="view project-detail">
             <button class="back-btn" onclick="navigate('projects')">
@@ -375,7 +364,7 @@ const views = {
                 </div>
             </div>
 
-            ${canPreview && viewerSrc ? `
+            ${canPreview ? `
             <div class="file-viewer-container" id="file-viewer-${project.id}">
                 <div class="file-viewer-header">
                     <div class="file-viewer-title">
@@ -396,14 +385,18 @@ const views = {
                         <div class="file-viewer-spinner"></div>
                         <span>Đang tải tài liệu...</span>
                     </div>
+                    ${fileExt === 'pdf' ? `
                     <iframe 
                         id="file-iframe-${project.id}"
                         class="file-viewer-iframe"
-                        src="${viewerSrc}"
+                        src="files/${project.file}"
                         frameborder="0"
                         allowfullscreen
                         onload="document.getElementById('file-loading-${project.id}').style.display='none';"
                     ></iframe>
+                    ` : `
+                    <div id="docx-container-${project.id}" class="docx-viewer-container"></div>
+                    `}
                 </div>
             </div>
             ` : ''}
@@ -527,8 +520,52 @@ window.loadProjectDetail = function(projectId) {
         contentArea.innerHTML = views.projectDetail(project);
         lucide.createIcons();
         contentArea.scrollTop = 0;
+        
+        // Render docx file if applicable
+        if (project.file) {
+            const fileExt = project.file.split('.').pop().toLowerCase();
+            if (fileExt === 'docx' || fileExt === 'doc') {
+                renderDocxFile(project);
+            }
+        }
     }
 };
+
+// Render DOCX file using docx-preview library
+function renderDocxFile(project) {
+    const container = document.getElementById(`docx-container-${project.id}`);
+    const loading = document.getElementById(`file-loading-${project.id}`);
+    
+    if (!container) return;
+    
+    fetch(`files/${project.file}`)
+        .then(response => response.arrayBuffer())
+        .then(arrayBuffer => {
+            if (loading) loading.style.display = 'none';
+            return docx.renderAsync(arrayBuffer, container, null, {
+                className: 'docx-preview',
+                inWrapper: true,
+                ignoreWidth: false,
+                ignoreHeight: false,
+                ignoreFonts: false,
+                breakPages: true,
+                useBase64URL: true,
+                renderHeaders: true,
+                renderFooters: true,
+                renderFootnotes: true,
+            });
+        })
+        .catch(err => {
+            console.error('Error rendering DOCX:', err);
+            if (loading) {
+                loading.innerHTML = `
+                    <i data-lucide="alert-circle" style="width: 40px; height: 40px; color: #ef4444;"></i>
+                    <span>Không thể tải tài liệu. <a href="files/${project.file}" download style="color: var(--text-accent);">Tải file về</a> để xem.</span>
+                `;
+                lucide.createIcons();
+            }
+        });
+}
 
 
 // Theme Toggle Function
