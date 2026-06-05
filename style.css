@@ -967,7 +967,7 @@ body.light-theme .file-viewer-loading {
 /* Prevent global p styling from overriding docx paragraph colors */
 .docx-viewer-container .docx-wrapper > section.docx p,
 .docx-viewer-container .docx-wrapper > section.docx span {
-    color: inherit;
+    color: inherit !important;
 }
 
 
