@@ -539,10 +539,14 @@ function renderDocxFile(project) {
     if (!container) return;
     
     fetch(`files/${project.file}`)
-        .then(response => response.arrayBuffer())
+        .then(response => {
+            if (!response.ok) throw new Error("HTTP " + response.status);
+            return response.arrayBuffer();
+        })
         .then(arrayBuffer => {
             if (loading) loading.style.display = 'none';
-            return docx.renderAsync(arrayBuffer, container, null, {
+            // docx object comes from docx-preview.min.js
+            return docx.renderAsync(arrayBuffer, container, container, {
                 className: 'docx-preview',
                 inWrapper: true,
                 ignoreWidth: false,
@@ -558,9 +562,10 @@ function renderDocxFile(project) {
         .catch(err => {
             console.error('Error rendering DOCX:', err);
             if (loading) {
+                loading.style.display = 'flex'; // Show loading container again to display error
                 loading.innerHTML = `
-                    <i data-lucide="alert-circle" style="width: 40px; height: 40px; color: #ef4444;"></i>
-                    <span>Không thể tải tài liệu. <a href="files/${project.file}" download style="color: var(--text-accent);">Tải file về</a> để xem.</span>
+                    <i data-lucide="alert-circle" style="width: 40px; height: 40px; color: #ef4444; margin-bottom: 10px;"></i>
+                    <span style="color: #ef4444; text-align: center; padding: 0 20px;">Lỗi không thể tải hoặc hiển thị tài liệu này (${err.message}).<br><br><a href="files/${project.file}" download style="color: var(--text-accent); text-decoration: underline;">Nhấp vào đây để tải file về máy</a>.</span>
                 `;
                 lucide.createIcons();
             }
