@@ -546,7 +546,7 @@ function renderDocxFile(project) {
         .then(arrayBuffer => {
             if (loading) loading.style.display = 'none';
             // docx object comes from docx-preview.min.js
-            return docx.renderAsync(arrayBuffer, container, container, {
+            return docx.renderAsync(arrayBuffer, container, null, {
                 className: 'docx-preview',
                 inWrapper: true,
                 ignoreWidth: false,
