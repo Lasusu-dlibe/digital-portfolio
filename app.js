@@ -366,7 +366,7 @@ const views = {
             </div>
 
             ${project.file && canPreview ? `
-            <div class="file-viewer-container" id="file-viewer-${project.id}" style="display: none;">
+            <div class="file-viewer-container" id="file-viewer-${project.id}">
                 <div class="file-viewer-header">
                     <div class="file-viewer-title">
                         <i data-lucide="file-text" style="width: 18px; height: 18px;"></i>
@@ -379,9 +379,6 @@ const views = {
                         <a href="files/${project.file}" target="_blank" class="file-viewer-btn" title="Mở tab mới">
                             <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
                         </a>
-                        <button class="file-viewer-btn file-viewer-close" onclick="toggleFileViewer('${project.id}')" title="Đóng">
-                            <i data-lucide="x" style="width: 16px; height: 16px;"></i>
-                        </button>
                     </div>
                 </div>
                 <div class="file-viewer-body">
@@ -520,51 +517,32 @@ window.loadProjectDetail = function(projectId) {
         contentArea.innerHTML = views.projectDetail(project);
         lucide.createIcons();
         contentArea.scrollTop = 0;
+        
+        // Auto-load file viewer
+        autoLoadFileViewer(project);
     }
 };
 
-// File viewer toggle function
-window.toggleFileViewer = function(projectId) {
-    const container = document.getElementById(`file-viewer-${projectId}`);
-    const iframe = document.getElementById(`file-iframe-${projectId}`);
-    const loading = document.getElementById(`file-loading-${projectId}`);
+// Auto-load file viewer when entering project detail
+function autoLoadFileViewer(project) {
+    if (!project || !project.file) return;
     
-    if (!container) return;
+    const fileExt = project.file.split('.').pop().toLowerCase();
+    if (fileExt !== 'pdf' && fileExt !== 'docx' && fileExt !== 'doc') return;
     
-    const isVisible = container.style.display !== 'none';
+    const iframe = document.getElementById(`file-iframe-${project.id}`);
+    if (!iframe) return;
     
-    if (isVisible) {
-        // Close viewer
-        container.style.display = 'none';
-        iframe.src = '';
-    } else {
-        // Open viewer
-        container.style.display = 'block';
-        loading.style.display = 'flex';
-        
-        const project = projectsData.find(p => p.id === projectId);
-        if (!project || !project.file) return;
-        
-        const fileExt = project.file.split('.').pop().toLowerCase();
-        const fileUrl = `files/${project.file}`;
-        
-        if (fileExt === 'pdf') {
-            // Use native browser PDF viewer
-            iframe.src = fileUrl;
-        } else if (fileExt === 'docx' || fileExt === 'doc') {
-            // Use Google Docs Viewer for Word files
-            // We need the full public URL for Google Docs Viewer
-            const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-            const fullFileUrl = baseUrl + fileUrl;
-            iframe.src = `https://docs.google.com/gview?url=${encodeURIComponent(fullFileUrl)}&embedded=true`;
-        }
-        
-        // Scroll to viewer
-        setTimeout(() => {
-            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
+    const fileUrl = `files/${project.file}`;
+    
+    if (fileExt === 'pdf') {
+        iframe.src = fileUrl;
+    } else if (fileExt === 'docx' || fileExt === 'doc') {
+        const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+        const fullFileUrl = baseUrl + fileUrl;
+        iframe.src = `https://docs.google.com/gview?url=${encodeURIComponent(fullFileUrl)}&embedded=true`;
     }
-};
+}
 
 // Theme Toggle Function
 function toggleTheme() {
