@@ -395,6 +395,12 @@ const views = {
                         onload="document.getElementById('file-loading-${project.id}').style.display='none';"
                     ></iframe>
                     ` : `
+                    <style>
+                        #docx-container-${project.id} * {
+                            color: #000 !important;
+                            text-shadow: none !important;
+                        }
+                    </style>
                     <div id="docx-container-${project.id}" class="docx-viewer-container"></div>
                     `}
                 </div>
