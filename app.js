@@ -341,7 +341,11 @@ const views = {
         </div>
     `,
 
-    projectDetail: (project) => `
+    projectDetail: (project) => {
+        const fileExt = project.file ? project.file.split('.').pop().toLowerCase() : '';
+        const canPreview = fileExt === 'pdf' || fileExt === 'docx' || fileExt === 'doc';
+        
+        return `
         <div class="view project-detail">
             <button class="back-btn" onclick="navigate('projects')">
                 <i data-lucide="arrow-left"></i> Quay lại danh sách
@@ -354,15 +358,55 @@ const views = {
                 <div>
                     <h2 class="detail-title">${project.title}</h2>
                     <p style="color: var(--text-secondary); margin-top: 5px;">${project.shortDesc}</p>
-                    ${project.file ? `<a href="files/${project.file}" target="_blank" download class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 15px; padding: 6px 12px;"><i data-lucide="download" style="width: 16px; height: 16px;"></i> Xem & Tải file</a>` : ''}
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        ${project.file && canPreview ? `<button class="btn-file-viewer" onclick="toggleFileViewer('${project.id}')"><i data-lucide="file-text" style="width: 16px; height: 16px;"></i> Xem & Tải file</button>` : ''}
+                        ${project.file && !canPreview ? `<a href="files/${project.file}" target="_blank" download class="btn-file-viewer"><i data-lucide="download" style="width: 16px; height: 16px;"></i> Tải file</a>` : ''}
+                    </div>
                 </div>
             </div>
+
+            ${project.file && canPreview ? `
+            <div class="file-viewer-container" id="file-viewer-${project.id}" style="display: none;">
+                <div class="file-viewer-header">
+                    <div class="file-viewer-title">
+                        <i data-lucide="file-text" style="width: 18px; height: 18px;"></i>
+                        <span>${project.file}</span>
+                    </div>
+                    <div class="file-viewer-actions">
+                        <a href="files/${project.file}" download class="file-viewer-btn" title="Tải xuống">
+                            <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                        </a>
+                        <a href="files/${project.file}" target="_blank" class="file-viewer-btn" title="Mở tab mới">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                        </a>
+                        <button class="file-viewer-btn file-viewer-close" onclick="toggleFileViewer('${project.id}')" title="Đóng">
+                            <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="file-viewer-body">
+                    <div class="file-viewer-loading" id="file-loading-${project.id}">
+                        <div class="file-viewer-spinner"></div>
+                        <span>Đang tải tài liệu...</span>
+                    </div>
+                    <iframe 
+                        id="file-iframe-${project.id}"
+                        class="file-viewer-iframe"
+                        src=""
+                        frameborder="0"
+                        allowfullscreen
+                        onload="document.getElementById('file-loading-${project.id}').style.display='none';"
+                    ></iframe>
+                </div>
+            </div>
+            ` : ''}
 
             <div class="project-html-content" style="display: flex; flex-direction: column; gap: 24px;">
                 ${project.contentHtml}
             </div>
         </div>
-    `,
+    `;
+    },
 
     summary: () => `
         <div class="view">
@@ -476,6 +520,49 @@ window.loadProjectDetail = function(projectId) {
         contentArea.innerHTML = views.projectDetail(project);
         lucide.createIcons();
         contentArea.scrollTop = 0;
+    }
+};
+
+// File viewer toggle function
+window.toggleFileViewer = function(projectId) {
+    const container = document.getElementById(`file-viewer-${projectId}`);
+    const iframe = document.getElementById(`file-iframe-${projectId}`);
+    const loading = document.getElementById(`file-loading-${projectId}`);
+    
+    if (!container) return;
+    
+    const isVisible = container.style.display !== 'none';
+    
+    if (isVisible) {
+        // Close viewer
+        container.style.display = 'none';
+        iframe.src = '';
+    } else {
+        // Open viewer
+        container.style.display = 'block';
+        loading.style.display = 'flex';
+        
+        const project = projectsData.find(p => p.id === projectId);
+        if (!project || !project.file) return;
+        
+        const fileExt = project.file.split('.').pop().toLowerCase();
+        const fileUrl = `files/${project.file}`;
+        
+        if (fileExt === 'pdf') {
+            // Use native browser PDF viewer
+            iframe.src = fileUrl;
+        } else if (fileExt === 'docx' || fileExt === 'doc') {
+            // Use Google Docs Viewer for Word files
+            // We need the full public URL for Google Docs Viewer
+            const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+            const fullFileUrl = baseUrl + fileUrl;
+            iframe.src = `https://docs.google.com/gview?url=${encodeURIComponent(fullFileUrl)}&embedded=true`;
+        }
+        
+        // Scroll to viewer
+        setTimeout(() => {
+            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
     }
 };
 
