@@ -7,7 +7,7 @@ const projectsData = [
         title: "BÀI 1: THAO TÁC CƠ BẢN VỚI TỆP TIN VÀ THƯ MỤC",
         shortDesc: "Thiết lập cấu trúc thư mục tối ưu và quy tắc đặt tên tệp khoa học để quản trị tài nguyên số của dự án nhóm.",
         icon: "folder",
-        file: "week1.zip",
+        file: "week1.pdf",
         contentHtml: `
             <div class="detail-block">
                 <h3 style="color: var(--text-accent); margin-bottom: 10px;"><i data-lucide="target" style="display:inline; width:20px; vertical-align:middle; margin-right:8px;"></i> Mục tiêu</h3>
